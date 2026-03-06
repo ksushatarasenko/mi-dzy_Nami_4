@@ -1,33 +1,293 @@
-<header>
-Lekcja 16 – Wielka litera
-</header>
+<!DOCTYPE html>
+<html lang="pl">
 
-<div class="container">
+<head>
 
-<div class="rule">
+    <meta charset="UTF-8">
+    <title>Lekcja – Kompozycja na stole</title>
 
-<h2>Wielką literą piszemy</h2>
+    <link rel="stylesheet" href="./css/style.css">
 
-<ul>
+</head>
 
-<li>imiona i nazwiska</li>
+<body>
 
-<li>nazwy miast</li>
+    <header>
+        Lekcja – Kompozycja na stole
+    </header>
 
-<li>nazwy państw</li>
+    <div class="container">
 
-<li>nazwy instytucji</li>
 
-<li>nazwy świąt</li>
+        <!-- WPROWADZENIE -->
 
-</ul>
+        <div class="box">
 
-<div class="word">Ewa</div>
-<div class="word">Warszawa</div>
-<div class="word">Europa</div>
-<div class="word">Uniwersytet Jagielloński</div>
-<div class="word">Święto Niepodległości</div>
+            <div class="title">Kompozycja na stole</div>
+            <h4><a href="https://flipbook.apps.gwo.pl/display/2379" target="_blank">ksizka 208 >></a></h4>
+
+            <p>
+                Na obrazach bardzo często przedstawia się kompozycje różnych przedmiotów,
+                na przykład naczyń, owoców i kwiatów.
+            </p>
+
+            <p>
+                Takie obrazy nazywamy <b>martwą naturą</b>.
+            </p>
+
+            <p>
+                На картинах часто изображают композиции из предметов,
+                например посуды, фруктов и цветов.
+                Такие картины называют <b>натюрмортом</b>.
+            </p>
+
+        </div>
+
+
+        <!-- OBRAZ -->
+
+        <div class="box">
+
+            <div class="title">Obraz</div>
+
+            <img src="https://m.media-amazon.com/images/I/51lhH4R-YBL._AC_UF894,1000_QL80_.jpg" class="lesson-image">
+
+            <p>
+                Henri Fantin-Latour – „Martwa natura”, 1866
+            </p>
+
+        </div>
+
+
+        <!-- SŁOWNICTWO -->
+
+        <div class="box">
+
+            <div class="title">Nowe słowa</div>
+
+            <div class="emotions-grid">
+
+                <div class="emotion">
+                    <p class="p">martwa natura — натюрморт</p>
+                    <p><b>1.</b> To jest obraz martwej natury. - <em>Это картина натюрморта.</em></p>
+                    <p><b>2.</b> Na martwej naturze są owoce. - <em>На натюрморте есть фрукты.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">koszyk — корзина</p>
+                    <p><b>1.</b> W koszyku są owoce. - <em>В корзине фрукты.</em></p>
+                    <p><b>2.</b> Koszyk stoi na stole. - <em>Корзина стоит на столе.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">wazon — ваза</p>
+                    <p><b>1.</b> W wazonie są kwiaty. - <em>В вазе цветы.</em></p>
+                    <p><b>2.</b> Wazon stoi na stole. - <em>Ваза стоит на столе.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">filiżanka — чашка</p>
+                    <p><b>1.</b> Filiżanka stoi na tacy. - <em>Чашка стоит на подносе.</em></p>
+                    <p><b>2.</b> Mama pije kawę z filiżanki. - <em>Мама пьёт кофе из чашки.</em></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PYTANIA -->
+
+        <div class="box">
+
+            <div class="title">Czy rozumiesz obraz?</div>
+
+            <div class="question-block">
+
+                <p>1. Co znajduje się na obrazie?</p>
+
+                <button onclick="toggleAnswer('o1')">Pokaż odpowiedź</button>
+
+                <p id="o1" class="answer">
+                    Na obrazie znajdują się owoce, kwiaty i filiżanka.
+                </p>
+
+            </div>
+
+            <div class="question-block">
+
+                <p>2. Gdzie znajdują się owoce?</p>
+
+                <button onclick="toggleAnswer('o2')">Pokaż odpowiedź</button>
+
+                <p id="o2" class="answer">
+                    Owoce znajdują się w koszyku.
+                </p>
+
+            </div>
+
+            <div class="question-block">
+
+                <p>3. Co stoi w wazonie?</p>
+
+                <button onclick="toggleAnswer('o3')">Pokaż odpowiedź</button>
+
+                <p id="o3" class="answer">
+                    W wazonie stoją kwiaty.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- OPIS OBRAZU -->
+
+        <div class="box">
+
+            <div class="title">Opis obrazu</div>
+
+            <p>
+                Opis obrazu składa się z trzech części:
+            </p>
+
+            <div class="word">wstęp</div>
+            <div class="word">rozwinięcie</div>
+            <div class="word">zakończenie</div>
+
+        </div>
+
+
+        <!-- ZADANIE -->
+
+        <div class="box">
+
+<div class="title">Twoje zadanie</div>
+
+<p>
+Spróbuj opisać obraz.
+</p>
+
+<p>
+Na obrazie widzę __________________
+</p>
+
+<p>
+Na stole stoi __________________
+</p>
+
+<p>
+W koszyku są __________________
+</p>
+
+<p>
+Podoba mi się __________________
+</p>
+
+
+<div style="margin-top:20px;">
+<button onclick="toggleAnswer('hint1')">Pokaż podpowiedź</button>
+</div>
+
+<div id="hint1" class="answer">
+
+<p><b>Podpowiedź – słowa:</b></p>
+
+<div class="word">owoce</div>
+<div class="word">kwiaty</div>
+<div class="word">koszyk</div>
+<div class="word">wazon</div>
+<div class="word">filiżanka</div>
+<div class="word">książka</div>
+
+</div>
+
+
+<div style="margin-top:20px;">
+<button onclick="toggleAnswer('hint2')">Pokaż przykład zdań</button>
+</div>
+
+<div id="hint2" class="answer">
+
+<p>
+Na obrazie widzę owoce i kwiaty.
+</p>
+
+<p>
+Na stole stoi wazon z kwiatami.
+</p>
+
+<p>
+W koszyku są jabłka i gruszki.
+</p>
+
+<p>
+Podoba mi się ten obraz.
+</p>
+
+</div>
+
+
+<div style="margin-top:20px;">
+<button onclick="toggleAnswer('hint3')">Pokaż pełną odpowiedź</button>
+</div>
+
+<div id="hint3" class="answer">
+
+<p>
+Na obrazie widzę owoce, kwiaty i filiżankę.
+</p>
+
+<p>
+Na stole stoi wazon z kwiatami.
+</p>
+
+<p>
+W koszyku są jabłka i gruszki.
+</p>
+
+<p>
+Obok stoi filiżanka i książka.
+</p>
+
+<p>
+Podoba mi się ten obraz, ponieważ jest bardzo spokojny i piękny.
+</p>
 
 </div>
 
 </div>
+
+
+        <!-- POWIEDZ O SOBIE -->
+
+        <div class="box">
+
+            <div class="title">Powiedz o sobie</div>
+
+            <p>
+                Czy lubisz oglądać obrazy?
+            </p>
+
+            <p>
+                Lubię obrazy, na których jest __________________
+            </p>
+
+            <p>
+                Najbardziej podoba mi się __________________
+            </p>
+
+        </div>
+
+
+        <a href="index.html" class="back">
+            ⬅ Powrót do wszystkich lekcji
+        </a>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

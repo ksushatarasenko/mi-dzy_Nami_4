@@ -218,3 +218,9 @@ background:#eef7ff;
 padding:10px;
 border-radius:6px;
 }
+
+/* img */
+.lesson-image{
+    width: 90%;
+    margin: 0 auto;
+}
