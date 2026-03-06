@@ -1,0 +1,180 @@
+body{
+font-family: Arial;
+background:#eef3fb;
+margin:0;
+}
+
+header{
+background:#ffb347;
+padding:20px;
+text-align:center;
+font-size:26px;
+font-weight:bold;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.box{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:12px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.word{
+background:#fff3a5;
+padding:15px;
+border-radius:10px;
+margin-top:10px;
+}
+
+button{
+background:#ffd84d;
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+font-size:16px;
+}
+
+button:hover{
+background:#ffc107;
+}
+
+.quiz button{
+display:block;
+margin:10px 0;
+}
+
+.result{
+font-weight:bold;
+margin-top:10px;
+}
+
+.back{
+margin-top:30px;
+display:inline-block;
+text-decoration:none;
+background:#7ed957;
+padding:10px 15px;
+border-radius:8px;
+color:black;
+}
+
+.rule{
+background:#dff3ff;
+padding:20px;
+border-left:6px solid #3aa6d0;
+border-radius:10px;
+margin:20px 0;
+}
+
+.vocab{
+background:#fff3a5;
+padding:20px;
+border-radius:10px;
+margin:20px 0;
+}
+
+.words{
+background:#f5f5f5;
+padding:20px;
+border-radius:10px;
+margin:20px 0;
+}
+
+.word{
+margin:8px 0;
+font-size: 18px;
+}
+.phrases{
+background:#fff7cc;
+padding:20px;
+border-radius:10px;
+margin:20px 0;
+border:2px solid #ffd84d;
+}
+
+.phrase{
+margin:6px 0;
+font-size:17px;
+}
+
+p{
+    font-size: 20px;
+}
+.p{
+    font-weight: 600;
+    font-size: 22px;
+    color: blue;
+}
+
+h2{
+    color: rgba(203, 5, 203, 0.963);
+}
+h3{
+    color: green;
+    font-size: 24px;
+}
+
+/*  */
+.emotion{
+background:#efe3a3;
+padding:20px;
+border-radius:12px;
+margin:20px 0;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+/* 
+.emotion h3{
+color:#1e40ff;
+font-size:24px;
+margin-bottom:15px;
+}
+
+.emotion h3 span{
+color:#333;
+font-weight:normal;
+} */
+
+.emotion p{
+font-size:18px;
+margin:10px 0;
+}
+
+.emotion em{
+color:#444;
+font-style:italic;
+margin-left:5px;
+}
+.emotions-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.emotion{
+background:#efe3a3;
+padding:20px;
+border-radius:12px;
+}
+
+.emotion h3{
+color:#1e40ff;
+margin-bottom:10px;
+}
+
+.emotion h3 span{
+color:#333;
+font-weight:normal;
+}
+
+.emotion em{
+color:#444;
+}
