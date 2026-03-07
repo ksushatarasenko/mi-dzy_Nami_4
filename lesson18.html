@@ -7,6 +7,7 @@
     <title>Lekcja – Sprawdź siebie</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleZumImage.css">
 
 </head>
 
@@ -22,6 +23,11 @@
         <!-- TEKST -->
 
         <div class="box">
+
+            <div class="two">
+                <img src="https://github.com/ksushatarasenko/polishSzkola_4klasa_assets/blob/main/polska/book/pageNo_211.jpeg?raw=true" alt="" class="zum">
+                <img src="https://github.com/ksushatarasenko/polishSzkola_4klasa_assets/blob/main/polska/book/pageNo_212.jpeg?raw=true" alt="" class="zum">
+            </div>
 
             <div class="title">Dzień u Bobrów</div>
 
@@ -252,6 +258,114 @@
 
         </div>
 
+        <!-- Sprawdź siebie -->
+        <div class="box">
+
+            <div class="title">Sprawdź siebie</div>
+
+            <div class="quiz">
+
+                <div class="question" data-correct="B">
+
+                    <p>1. O wizycie u państwa Bobrów opowiada:</p>
+
+                    <div class="option">A. pani Bobrowa</div>
+                    <div class="option">B. narrator</div>
+                    <div class="option">C. dzieci</div>
+                    <div class="option">D. Bóbr</div>
+
+                </div>
+
+
+                <div class="question" data-correct="D">
+
+                    <p>2. Kiedy żona Bobra zobaczyła dzieci:</p>
+
+                    <div class="option">A. ucieszyła się, choć było to nieoczekiwane spotkanie</div>
+                    <div class="option">B. zmartwiła się, bo nie miała czym poczęstować gości</div>
+                    <div class="option">C. zmartwiła się, ponieważ nie lubiła nieproszonych gości</div>
+                    <div class="option">D. bardzo się ucieszyła, gdyż było to spotkanie, na które długo czekała</div>
+
+                </div>
+
+
+                <div class="question" data-correct="B">
+
+                    <p>3. Dom państwa Bobrów wydał się Łucji:</p>
+
+                    <div class="option">A. brudny</div>
+                    <div class="option">B. przytulny</div>
+                    <div class="option">C. zagracony</div>
+                    <div class="option">D. zaniedbany</div>
+
+                </div>
+
+
+                <div class="question" data-correct="A">
+
+                    <p>4. W czasie gdy pani Bobrowa przygotowywała posiłek dziewczynki:</p>
+
+                    <div class="option">A. pomagały w przygotowaniach</div>
+                    <div class="option">B. odpoczywały i oglądały mieszkanie</div>
+                    <div class="option">C. poszły łowić ryby z panem Tumnusem</div>
+                    <div class="option">D. przyglądały się temu, co robi pani Bobrowa</div>
+
+                </div>
+
+
+                <div class="question" data-correct="A">
+
+                    <p>5. Dzieciom posiłek sporządzony przez państwa Bobrów:</p>
+
+                    <div class="option">A. bardzo smakował</div>
+                    <div class="option">B. bardzo smakował, ale było go mało</div>
+                    <div class="option">C. nie smakował, ale zjadły go, ponieważ były głodne</div>
+                    <div class="option">D. nie smakował, ale zjadły go, ponieważ były dobrze wychowane</div>
+
+                </div>
+
+
+                <div class="question" data-correct="B">
+
+                    <p>6. Słowa „a ja zgadzam się z nimi” padają z ust:</p>
+
+                    <div class="option">A. dzieci</div>
+                    <div class="option">B. narratora</div>
+                    <div class="option">C. pana Bobra</div>
+                    <div class="option">D. pani Bobrowej</div>
+
+                </div>
+
+
+                <div class="question" data-correct="C">
+
+                    <p>7. Pani Bobrowa poczęstowała dzieci:</p>
+
+                    <div class="option">A. mleko, kartofle z masłem, pstrągi, strucla z serem</div>
+                    <div class="option">B. piwo, kartofle z masłem, pstrągi, strucla z marmoladą</div>
+                    <div class="option">C. mleko, kartofle z masłem, pstrągi, strucla z marmoladą</div>
+                    <div class="option">D. sok malinowy, kartofle z masłem, pstrągi, strucla z serem</div>
+
+                </div>
+
+
+                <div class="question" data-correct="C">
+
+                    <p>8. „Rozkosze podniebienia” oznaczają:</p>
+
+                    <div class="option">A. bardzo smaczną potrawę z ziemniaków</div>
+                    <div class="option">B. bardzo smaczną potrawę z ryb</div>
+                    <div class="option">C. bardzo smaczny posiłek</div>
+                    <div class="option">D. bardzo smaczny deser</div>
+
+                </div>
+
+            </div>
+
+            <button class="check-btn" onclick="checkQuiz()">Sprawdź odpowiedzi</button>
+
+        </div>
+
 
         <!-- WYRAZY POKREWNE -->
 
@@ -263,11 +377,6 @@
                 Wybierz wyrazy pokrewne do słowa <b>dom</b>.
             </p>
 
-            <div class="word">dom</div>
-            <div class="word">domek</div>
-            <div class="word">domeczek</div>
-            <div class="word">domownik</div>
-            <div class="word">udomowiony</div>
 
 
             <div style="margin-top:20px;">
@@ -275,10 +384,11 @@
             </div>
 
             <div id="pokrewne" class="answer">
-
-                <p>
-                    dom, domek, domeczek, domownik, udomowiony
-                </p>
+                <div class="word">dom</div>
+                <div class="word">domek</div>
+                <div class="word">domeczek</div>
+                <div class="word">domownik</div>
+                <div class="word">udomowiony</div>
 
             </div>
 
@@ -292,6 +402,7 @@
     </div>
 
     <script src="./js/script.js"></script>
+    <script src="./js/imageZum.js"></script>
 
 </body>
 

@@ -39,3 +39,46 @@ answer.style.display = "block";
 }
 
 }
+
+// Вопрос с вариантами ответов
+
+document.querySelectorAll(".option").forEach(option => {
+
+option.addEventListener("click", function(){
+
+const question = this.parentElement;
+const options = question.querySelectorAll(".option");
+
+options.forEach(o => o.classList.remove("selected"));
+
+this.classList.add("selected");
+
+});
+
+});
+
+
+function checkQuiz(){
+
+document.querySelectorAll(".question").forEach(question => {
+
+const correct = question.dataset.correct;
+const options = question.querySelectorAll(".option");
+
+options.forEach(option => {
+
+const letter = option.textContent.trim().charAt(0);
+
+if(letter === correct){
+option.classList.add("correct");
+}
+
+if(option.classList.contains("selected") && letter !== correct){
+option.classList.add("wrong");
+}
+
+});
+
+});
+
+}

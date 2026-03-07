@@ -224,3 +224,64 @@ border-radius:6px;
     width: 90%;
     margin: 0 auto;
 }
+
+.two{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.two>img{
+width: 50%;
+}
+
+
+/* Вопрос с вариантами ответов */
+
+.quiz{
+margin-top:20px;
+}
+
+.question{
+background:white;
+padding:15px;
+border-radius:8px;
+margin-bottom:20px;
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.option{
+padding:10px;
+margin-top:8px;
+border-radius:6px;
+cursor:pointer;
+background:#f5f5f5;
+}
+
+.option:hover{
+background:#e8e8e8;
+}
+
+.option.selected{
+background:#d0e8ff;
+}
+
+.option.correct{
+background:#b8f5b8;
+}
+
+.option.wrong{
+background:#ffb8b8;
+}
+
+.check-btn{
+margin-top:20px;
+padding:10px 20px;
+font-size:16px;
+background:#4CAF50;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
