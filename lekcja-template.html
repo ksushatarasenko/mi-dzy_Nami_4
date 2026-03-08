@@ -33,6 +33,203 @@
         </div>
     </div>
     <!--  -->
+    <!-- 📚 Стандарт структуры урока -->
+    <!-- 1️⃣ WPROWADZENIE – текст -->
+    <div class="box">
+
+        <div class="title">Czytamy tekst</div>
+
+        <p>pełny tekst...</p>
+
+    </div>
+
+    <!-- 2️⃣ SŁOWNICTWO -->
+    <div class="box">
+
+        <div class="emotions-grid">
+
+            <div class="emotion">
+                <p class="p">słowo — перевод</p>
+                <p><b>1.</b> przykład zdania</p>
+                <p><b>2.</b> przykład zdania</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 3️⃣ CZY ROZUMIESZ TEKST -->
+
+    <div class="quiz">
+
+        <div class="question" data-correct="A">
+            <p>Pytanie</p>
+
+            <div class="option">A. odpowiedź</div>
+            <div class="option">B. odpowiedź</div>
+            <div class="option">C. odpowiedź</div>
+
+        </div>
+
+        <button class="check-btn" onclick="checkQuiz()">Sprawdź</button>
+
+    </div>
+    <!-- 4️⃣ PLAN WYDARZEŃ -->
+    <div class="box">
+
+        <div class="title">Plan wydarzeń</div>
+
+        <p>1. __________</p>
+        <p>2. __________</p>
+        <p>3. __________</p>
+
+        <button onclick="toggleAnswer()">Pokaż odpowiedź</button>
+
+    </div>
+
+    <!-- 5️⃣ OPOWIEDZ HISTORIĘ -->
+
+    Na początku ______
+    Potem ______
+    Później ______
+    Na końcu ______
+    <!-- 6️⃣ ANALIZA BOHATERÓW -->
+
+    <table class="lesson-table">
+
+<tr>
+<th>Bohater</th>
+<th>Co robi?</th>
+<th>Co czuje?</th>
+</tr>
+
+</table>
+<!-- 7️⃣ ROZMOWA BOHATERÓW -->
+ Ulica: __________
+Dom: __________
+Pies: __________
+<!-- 8️⃣ KTO TO POWIEDZIAŁ -->
+ <div class="question">
+
+<p>„cytat”</p>
+
+<div class="option">postać</div>
+
+</div>
+<!-- 9️⃣ UŁÓŻ WYDARZENIA -->
+ <ul id="events">
+
+<li draggable="true" data-order="1">zdanie</li>
+
+</ul>
+<!-- 🔟 ZNAJDŹ W TEKŚCIE -->
+ znajdź epitety
+znajdź rzeczowniki
+znajdź czasowniki
+<p>ciemnozielone ______</p>
 </body>
 
+<!--  -->
+
+🎯 Общие правила урока
+
+Каждый урок должен иметь:
+
+✔ текст
+✔ словарик
+✔ понимание текста
+✔ грамматику
+✔ творческое задание
+✔ интерактив
+
+
+🎮 Типы интерактивных заданий
+тип	что делает
+quiz	выбор ответа
+toggleAnswer	показать ответ
+drag order	порядок событий
+character match	кто сказал
+fill gaps	вставить слово
+
+<!-- 🎨 Визуальные блоки -->
+🎨 Визуальные блоки
+
+Используются:
+
+.box
+.rule
+.word
+.quiz
+.question
+.option
+.answer
+<!-- 📦 Структура HTML урока -->
+ header
+container
+box (tekst)
+box (słownictwo)
+box (quiz)
+box (zadania)
+box (twórcze)
+
+<!-- 💡 Очень важный принцип курса -->
+
+
+Каждый урок должен:
+
+📖 читать
+🧠 понимать
+🗣 говорить
+✍ писать
+🎮 играть
+
+<!-- 📁 Основная структура сайта -->
+ polski-kurs/
+│
+├── index.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── script.js
+│   ├── quiz.js
+│   ├── drag.js
+│
+├── images/
+│   └── lekcje/
+│
+├── lessons/
+│   ├── lekcja1.html
+│   ├── lekcja2.html
+│   ├── lekcja3.html
+│   ├── lekcja4.html
+│
+└── assets/
+    └── icons
+
+    <!-- 📂 Папка js -->
+
+Разделяем логику.
+
+js/
+│
+├── script.js
+├── quiz.js
+├── drag.js
+├── toggle.js
+script.js
+
+общие функции
+
+quiz.js
+
+все тесты
+
+drag.js
+
+перетаскивание
+
+toggle.js
+
+кнопка "Pokaż odpowiedź"
 </html>

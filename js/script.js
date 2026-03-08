@@ -82,3 +82,123 @@ option.classList.add("wrong");
 });
 
 }
+// Kto to powiedział?
+
+document.querySelectorAll('.option').forEach(option => {
+
+option.addEventListener('click', function(){
+
+let question = this.closest('.question')
+
+question.querySelectorAll('.option').forEach(o=>{
+o.classList.remove('selected')
+})
+
+this.classList.add('selected')
+
+})
+
+})
+
+
+function checkQuiz(){
+
+document.querySelectorAll('.question').forEach(question=>{
+
+let correct = question.dataset.answer
+let selected = question.querySelector('.option.selected')
+
+question.querySelectorAll('.option').forEach(o=>{
+o.classList.remove('correct','wrong')
+})
+
+if(!selected) return
+
+if(selected.dataset.value === correct){
+selected.classList.add('correct')
+}else{
+selected.classList.add('wrong')
+
+question.querySelectorAll('.option').forEach(o=>{
+if(o.dataset.value === correct){
+o.classList.add('correct')
+}
+})
+
+}
+
+})
+
+}
+
+// Ułóż wydarzenia w kolejności
+const list = document.getElementById("events")
+let draggedItem = null
+
+list.addEventListener("dragstart", e=>{
+draggedItem = e.target
+e.target.classList.add("dragging")
+})
+
+list.addEventListener("dragend", e=>{
+e.target.classList.remove("dragging")
+})
+
+list.addEventListener("dragover", e=>{
+e.preventDefault()
+const afterElement = getDragAfterElement(list, e.clientY)
+const draggable = document.querySelector(".dragging")
+
+if(afterElement == null){
+list.appendChild(draggable)
+}else{
+list.insertBefore(draggable, afterElement)
+}
+})
+
+function getDragAfterElement(container, y){
+const draggableElements = [...container.querySelectorAll("li:not(.dragging)")]
+
+return draggableElements.reduce((closest, child)=>{
+const box = child.getBoundingClientRect()
+const offset = y - box.top - box.height / 2
+
+if(offset < 0 && offset > closest.offset){
+return {offset: offset, element: child}
+}else{
+return closest
+}
+
+},{offset:Number.NEGATIVE_INFINITY}).element
+}
+
+
+function checkOrder(){
+
+const items = document.querySelectorAll("#events li")
+let correctCount = 0
+
+items.forEach((item,index)=>{
+
+item.classList.remove("correct","wrong")
+
+if(parseInt(item.dataset.order) === index+1){
+item.classList.add("correct")
+correctCount++
+}else{
+item.classList.add("wrong")
+}
+
+})
+
+const result = document.getElementById("order-result")
+
+if(correctCount === items.length){
+result.textContent = "Świetnie! Wszystko jest w dobrej kolejności."
+result.style.color = "green"
+}else{
+result.textContent = "Sprawdź czerwone zdania i spróbuj poprawić."
+result.style.color = "red"
+}
+
+}
