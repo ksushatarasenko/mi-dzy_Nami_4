@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Lekcja – Sprawdź siebie</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleZumImage.css">
+
+</head>
+
+<body>
+
+    <header>
+        Lekcja – „O wschodzie słońca” (Pan Tadeusz).
+    </header>
+
+    <div class="container">
+
+
+        <!-- TEKST -->
+
+        <div class="box">
+
+            <div class="two">
+                <img src="https://flipbook.apps.gwo.pl/book/getImage/bookId:2379/pageNo:222" alt="" class="zum">
+                <img src="https://flipbook.apps.gwo.pl/book/getImage/bookId:2379/pageNo:223" alt="" class="zum">
+            </div>
+
+            <div class="title">O wschodzie słońca</div>
+
+            <p><b>Adam Mickiewicz</b></p>
+            <p><i>Pan Tadeusz – Księga II (fragment)</i></p>
+
+            <br>
+
+            <p>
+                Nad Soplicowem słońce weszło i już padło<br>
+                Na strzechy, i przez szpary w stodołę się wkradło;<br>
+                I po ciemnozielonym, świeżym, wonnym sianie,<br>
+                Z którego młodzież sobie zrobiła posłanie,<br>
+                Rozpływały się złote, migające pręgi<br>
+                Z otworu czarnej strzechy, jak z warkocza wstęgi.
+            </p>
+
+            <p>
+                Już wróble skacząc ćwierkać zaczęły pod strzechą,<br>
+                Już trzykroć gęgnął gęsior, a za nim jak echo<br>
+                Odezwały się chórem kaczki i indyki,<br>
+                I słychać bydła w pole idącego ryki.
+            </p>
+
+
+        </div>
+
+        <!-- SŁOWNICTWO -->
+
+        <div class="box">
+
+            <div class="title">Słowa z tekstu</div>
+
+            <div class="emotions-grid">
+
+                <div class="emotion">
+                    <p class="p">wzeszło — взошло</p>
+                    <p><b>1.</b> Słońce wzeszło nad lasem. - <em>Солнце взошло над лесом.</em></p>
+                    <p><b>2.</b> Rano słońce wzeszło bardzo wcześnie. - <em>Утром солнце взошло очень рано.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">strzecha — соломенная крыша</p>
+                    <p><b>1.</b> Stary dom miał strzechę. - <em>У старого дома была соломенная крыша.</em></p>
+                    <p><b>2.</b> Na strzesze siedziały ptaki. - <em>На соломенной крыше сидели птицы.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">stodoła — амбар</p>
+                    <p><b>1.</b> W stodole przechowuje się siano. - <em>В амбаре хранят сено.</em></p>
+                    <p><b>2.</b> Dzieci bawiły się w starej stodole. - <em>Дети играли в старом амбаре.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">wonny — ароматный</p>
+                    <p><b>1.</b> W ogrodzie rosną wonne kwiaty. - <em>В саду растут ароматные цветы.</em></p>
+                    <p><b>2.</b> Powietrze było wonne od siana. - <em>Воздух был ароматным от сена.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">ćwierkać — чирикать</p>
+                    <p><b>1.</b> Ptaki ćwierkają rano. - <em>Птицы чирикают утром.</em></p>
+                    <p><b>2.</b> Wróble ćwierkają na drzewie. - <em>Воробьи чирикают на дереве.</em></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Czy rozumiesz tekst? -->
+
+        <div class="box">
+
+            <div class="title">Czy rozumiesz tekst?</div>
+
+            <div class="quiz">
+
+                <div class="question" data-correct="A">
+                    <p>1. Gdzie wzeszło słońce?</p>
+                    <div class="option">A. Nad Soplicowem</div>
+                    <div class="option">B. Nad miastem</div>
+                    <div class="option">C. Nad morzem</div>
+                </div>
+
+                <div class="question" data-correct="B">
+                    <p>2. Gdzie wkradło się światło słońca?</p>
+                    <div class="option">A. do domu</div>
+                    <div class="option">B. do stodoły</div>
+                    <div class="option">C. do szkoły</div>
+                </div>
+
+                <div class="question" data-correct="C">
+                    <p>3. Jakie ptaki ćwierkały pod strzechą?</p>
+                    <div class="option">A. kury</div>
+                    <div class="option">B. gołębie</div>
+                    <div class="option">C. wróble</div>
+                </div>
+
+                <button class="check-btn" onclick="checkQuiz()">Sprawdź odpowiedzi</button>
+
+                <p id="quiz-result" class="quiz-result"></p>
+
+            </div>
+
+        </div>
+
+        <!-- Epitet -->
+        <div class="rule">
+
+            <h2>Epitet</h2>
+
+            <p>
+                Wyraz, który w zdaniu określa rzeczownik,
+                nazywamy <b>epitetem</b>.
+            </p>
+
+            <p>
+                Najczęściej epitet jest przymiotnikiem
+                i opisuje cechy przedmiotów, ludzi lub zjawisk.
+            </p>
+
+            <p>
+                Эпитет — это слово, которое описывает существительное
+                и делает речь более образной.
+            </p>
+
+            <div class="word">ciemnozielone siano</div>
+            <div class="word">świeże siano</div>
+            <div class="word">wonne siano</div>
+            <div class="word">złote pręgi</div>
+
+        </div>
+
+        <!-- Znajdź epitety w tekście -->
+        <div class="box">
+
+            <div class="title">Znajdź epitety w tekście</div>
+
+            <p>
+                Wybierz z tekstu wyrazy, które określają rzeczowniki
+                (np. jaki? jaka? jakie?).
+            </p>
+
+            <p>
+                Uzupełnij:
+            </p>
+
+            <p>
+                ciemnozielone __________________
+            </p>
+
+            <p>
+                świeże __________________
+            </p>
+
+            <p>
+                wonne __________________
+            </p>
+
+            <p>
+                złote __________________
+            </p>
+
+            <p>
+                czarna __________________
+            </p>
+
+
+            <div style="margin-top:20px;">
+                <button onclick="toggleAnswer('epitety')">Pokaż odpowiedź</button>
+            </div>
+
+            <div id="epitety" class="answer">
+
+                <p>ciemnozielone <b>siano</b></p>
+
+                <p>świeże <b>siano</b></p>
+
+                <p>wonne <b>siano</b></p>
+
+                <p>złote <b>pręgi</b></p>
+
+                <p>czarna <b>strzecha</b></p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Opowiedz jeszcze raz historię -->
+        <div class="box">
+
+            <div class="title">Opowiedz, co się działo w Soplicowie</div>
+
+            <p>
+                Opowiedz jeszcze raz, co się działo o wschodzie słońca
+                w Soplicowie. Użyj podanych słów.
+            </p>
+
+            <p>
+                słońce • promienie • strzecha • stodoła • siano • wróble • gęsi • kaczki • bydło
+            </p>
+
+            <br>
+
+            <p>
+                Na początku __________________________________
+            </p>
+
+            <p>
+                Potem _______________________________________
+            </p>
+
+            <p>
+                Później ______________________________________
+            </p>
+
+            <p>
+                Na końcu ____________________________________
+            </p>
+
+
+            <div style="margin-top:20px;">
+                <button onclick="toggleAnswer('opowiadanie')">Pokaż przykład</button>
+            </div>
+
+            <div id="opowiadanie" class="answer">
+
+                <p>
+                    Na początku słońce wzeszło nad Soplicowem.
+                </p>
+
+                <p>
+                    Potem jego promienie wpadły przez strzechę do stodoły
+                    i oświetliły świeże siano.
+                </p>
+
+                <p>
+                    Później wróble zaczęły ćwierkać,
+                    a gęsi i kaczki odezwały się głośno.
+                </p>
+
+                <p>
+                    Na końcu było słychać bydło idące na pole.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Porównaj opisy (zadanie 4) -->
+        <div class="box">
+
+            <div class="title">Porównaj opisy</div>
+
+            <p>
+                Porównaj swoją wypowiedź z zadania 2
+                i opis z zadania 3.
+            </p>
+
+            <p>
+                Powiedz, która wypowiedź:
+            </p>
+
+            <p>• bardziej szczegółowo przedstawia rzeczywistość</p>
+            <p>• lepiej oddziałuje na wyobraźnię odbiorcy</p>
+
+            <br>
+
+            <p>
+                Moim zdaniem bardziej szczegółowy jest opis:
+            </p>
+
+            <p>
+                __________________________________________
+            </p>
+
+            <p>
+                Ten opis bardziej działa na wyobraźnię, ponieważ:
+            </p>
+
+            <p>
+                __________________________________________
+            </p>
+
+
+            <div style="margin-top:20px;">
+                <button onclick="toggleAnswer('porownanie-opisow')">Pokaż przykład</button>
+            </div>
+
+            <div id="porownanie-opisow" class="answer">
+
+                <p>
+                    Moim zdaniem opis z epitetami jest bardziej szczegółowy.
+                </p>
+
+                <p>
+                    Ten opis bardziej działa na wyobraźnię,
+                    ponieważ zawiera wiele określeń,
+                    na przykład: „ciemnozielone siano”, „złote pręgi”.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Znajdź epitety w zdaniach — Zadanie 5 -->
+        <div class="box">
+
+            <div class="title">Znajdź epitety w zdaniach — Zadanie 5</div>
+
+            <p>
+                Przeczytaj zdania i znajdź epitety
+                (czyli wyrazy określające rzeczownik).
+            </p>
+
+            <br>
+
+            <p>
+                1. Może to była <b>chmureczka niebieska</b>?
+            </p>
+
+            <p>
+                2. Mam owoce <b>mięsiste</b>, skórkę <b>złotą</b>.
+            </p>
+
+            <p>
+                3. Grusze jaśniały <b>suchą</b> i <b>wonną</b> purpurą.
+            </p>
+
+            <p>
+                4. Piwnica wygląda <b>obiecująco</b>,
+                ale schodki są <b>bardzo strome</b> i <b>wysokie</b>.
+            </p>
+
+
+            <div style="margin-top:20px;">
+                <button onclick="toggleAnswer('epitety2')">Pokaż odpowiedź</button>
+            </div>
+
+            <div id="epitety2" class="answer">
+
+                <p>
+                    Epitety:
+                </p>
+
+                <p>niebieska chmureczka</p>
+                <p>mięsiste owoce</p>
+                <p>złota skórka</p>
+                <p>sucha purpura</p>
+                <p>wonna purpura</p>
+                <p>strome schodki</p>
+                <p>wysokie schodki</p>
+
+            </div>
+
+        </div>
+        <!-- ✨ „Opisz poranek” -->
+        <div class="box">
+
+            <div class="title">Opisz poranek</div>
+
+            <p>
+                Spróbuj opisać poranek. Użyj przymiotników (epitetów),
+                aby opis był ciekawszy.
+            </p>
+
+            <br>
+
+            <p>
+                Rano słońce __________________________________
+            </p>
+
+            <p>
+                Na niebie ____________________________________
+            </p>
+
+            <p>
+                Ptaki ________________________________________
+            </p>
+
+            <p>
+                Powietrze jest _________________________________
+            </p>
+
+            <p>
+                Widzę ________________________________________
+            </p>
+
+
+            <div style="margin-top:20px;">
+                <button onclick="toggleAnswer('poranek')">Pokaż przykład</button>
+            </div>
+
+            <div id="poranek" class="answer">
+
+                <p><b>Przykład:</b></p>
+
+                <p>
+                    Rano słońce wschodzi nad zielonym polem.
+                </p>
+
+                <p>
+                    Na niebie płyną białe, lekkie chmury.
+                </p>
+
+                <p>
+                    Ptaki głośno śpiewają na wysokich drzewach.
+                </p>
+
+                <p>
+                    Powietrze jest świeże i chłodne.
+                </p>
+
+                <p>
+                    Widzę spokojną wieś i złote promienie słońca.
+                </p>
+
+            </div>
+
+        </div>
+        <!-- Dodaj epitet -->
+        <div class="box">
+
+            <div class="title">Dodaj epitet</div>
+
+            <p>
+                Uzupełnij zdania odpowiednim epitetem
+                (przymiotnikiem opisującym rzeczownik).
+            </p>
+
+            <br>
+
+            <p>
+                1. __________ słońce wschodzi nad polem.
+            </p>
+
+            <p>
+                2. Na niebie płyną __________ chmury.
+            </p>
+
+            <p>
+                3. W ogrodzie rosną __________ kwiaty.
+            </p>
+
+            <p>
+                4. Na drzewie siedzi __________ ptak.
+            </p>
+
+            <p>
+                5. W stodole leży __________ siano.
+            </p>
+
+
+            <div style="margin-top:20px;">
+                <button onclick="toggleAnswer('epitet-uzupelnij')">Pokaż przykład</button>
+            </div>
+
+            <div id="epitet-uzupelnij" class="answer">
+
+                <p><b>Przykłady:</b></p>
+
+                <p>1. <b>Złote</b> słońce wschodzi nad polem.</p>
+
+                <p>2. Na niebie płyną <b>białe</b> chmury.</p>
+
+                <p>3. W ogrodzie rosną <b>kolorowe</b> kwiaty.</p>
+
+                <p>4. Na drzewie siedzi <b>mały</b> ptak.</p>
+
+                <p>5. W stodole leży <b>świeże</b> siano.</p>
+
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back">
+            ⬅ Powrót do wszystkich lekcji
+        </a>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/imageZum.js"></script>
+
+</body>
+
+</html>
