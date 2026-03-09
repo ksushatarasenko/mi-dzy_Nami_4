@@ -119,6 +119,10 @@ p{
     font-size: 12 px;
     font-style: italic;
 }
+h4{
+    color: rgb(0, 128, 122);
+    font-size: 24px;
+}
 
 h6{
     color: green;
@@ -259,6 +263,7 @@ border-radius:6px;
     padding: 2%;
     width: 100%;
     margin: 0 auto;
+    gap: 10px;
 }
 
 .two>img{
