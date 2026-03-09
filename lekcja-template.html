@@ -96,36 +96,36 @@
 
     <table class="lesson-table">
 
-<tr>
-<th>Bohater</th>
-<th>Co robi?</th>
-<th>Co czuje?</th>
-</tr>
+        <tr>
+            <th>Bohater</th>
+            <th>Co robi?</th>
+            <th>Co czuje?</th>
+        </tr>
 
-</table>
-<!-- 7️⃣ ROZMOWA BOHATERÓW -->
- Ulica: __________
-Dom: __________
-Pies: __________
-<!-- 8️⃣ KTO TO POWIEDZIAŁ -->
- <div class="question">
+    </table>
+    <!-- 7️⃣ ROZMOWA BOHATERÓW -->
+    Ulica: __________
+    Dom: __________
+    Pies: __________
+    <!-- 8️⃣ KTO TO POWIEDZIAŁ -->
+    <div class="question">
 
-<p>„cytat”</p>
+        <p>„cytat”</p>
 
-<div class="option">postać</div>
+        <div class="option">postać</div>
 
-</div>
-<!-- 9️⃣ UŁÓŻ WYDARZENIA -->
- <ul id="events">
+    </div>
+    <!-- 9️⃣ UŁÓŻ WYDARZENIA -->
+    <ul id="events">
 
-<li draggable="true" data-order="1">zdanie</li>
+        <li draggable="true" data-order="1">zdanie</li>
 
-</ul>
-<!-- 🔟 ZNAJDŹ W TEKŚCIE -->
- znajdź epitety
-znajdź rzeczowniki
-znajdź czasowniki
-<p>ciemnozielone ______</p>
+    </ul>
+    <!-- 🔟 ZNAJDŹ W TEKŚCIE -->
+    znajdź epitety
+    znajdź rzeczowniki
+    znajdź czasowniki
+    <p>ciemnozielone ______</p>
 </body>
 
 <!--  -->
@@ -143,12 +143,12 @@ znajdź czasowniki
 
 
 🎮 Типы интерактивных заданий
-тип	что делает
-quiz	выбор ответа
-toggleAnswer	показать ответ
-drag order	порядок событий
-character match	кто сказал
-fill gaps	вставить слово
+тип что делает
+quiz выбор ответа
+toggleAnswer показать ответ
+drag order порядок событий
+character match кто сказал
+fill gaps вставить слово
 
 <!-- 🎨 Визуальные блоки -->
 🎨 Визуальные блоки
@@ -163,7 +163,7 @@ fill gaps	вставить слово
 .option
 .answer
 <!-- 📦 Структура HTML урока -->
- header
+header
 container
 box (tekst)
 box (słownictwo)
@@ -183,31 +183,31 @@ box (twórcze)
 🎮 играть
 
 <!-- 📁 Основная структура сайта -->
- polski-kurs/
+polski-kurs/
 │
 ├── index.html
 │
 ├── css/
-│   └── style.css
+│ └── style.css
 │
 ├── js/
-│   ├── script.js
-│   ├── quiz.js
-│   ├── drag.js
+│ ├── script.js
+│ ├── quiz.js
+│ ├── drag.js
 │
 ├── images/
-│   └── lekcje/
+│ └── lekcje/
 │
 ├── lessons/
-│   ├── lekcja1.html
-│   ├── lekcja2.html
-│   ├── lekcja3.html
-│   ├── lekcja4.html
+│ ├── lekcja1.html
+│ ├── lekcja2.html
+│ ├── lekcja3.html
+│ ├── lekcja4.html
 │
 └── assets/
-    └── icons
+└── icons
 
-    <!-- 📂 Папка js -->
+<!-- 📂 Папка js -->
 
 Разделяем логику.
 
@@ -232,4 +232,14 @@ drag.js
 toggle.js
 
 кнопка "Pokaż odpowiedź"
+
 </html>
+
+
+<!-- podskazka -->
+
+<button onclick="toggleAnswer('a1')">Pokaż odpowiedź</button>
+
+<div id="a1" class="answer">
+    Narrator mówi w prostokątnych polach tekstowych.
+</div>

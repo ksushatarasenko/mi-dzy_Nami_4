@@ -131,6 +131,17 @@ color:#ff8c42;
 margin-bottom:10px;
 }
 
+.orang{
+    color:#ff8c42;
+    font-family: 20px;
+}
+
+.text{
+    font-family: 19px;
+    line-height: 1.4;
+    padding: 4%;
+}
+
 .violet{
     color: #801eff;
 }
@@ -140,6 +151,10 @@ h2{
 h3{
     color: green;
     font-size: 24px;
+}
+.zadanie{
+    color: #ff8c42;
+    font-size: 20px;
 }
 
 /*  */
@@ -197,7 +212,10 @@ font-weight:normal;
 .emotion em{
 color:#444;
 }
-
+.emotion b{
+font-size:18px;
+color:#1e40ff;
+}
 /* Pytania */
 .question-block{
 background:white;
@@ -246,7 +264,24 @@ border-radius:6px;
 .two>img{
 width: 50%;
 }
+.image{
+    width: 40%;
+    margin: 0 auto;
+}
+.image>img{
+    width: 90%;
+    margin: 0 auto;
+}
 
+.video{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.video> iframe{
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Вопрос с вариантами ответов */
 
@@ -309,6 +344,7 @@ margin-top:15px;
 border:1px solid #ddd;
 padding:10px;
 text-align:left;
+font-size: 18px;
 }
 
 /* Kto to powiedział? */
@@ -391,4 +427,35 @@ border:2px solid #2e9c42;
 .wrong{
 background:#ffbcbc;
 border:2px solid #c62828;
+}
+
+/* klik slowa */
+#verb-text{
+line-height:2.2;
+font-size:18px;
+}
+
+#verb-text span{
+cursor:pointer;
+padding:4px 6px;
+border-radius:5px;
+margin:2px;
+display:inline-block;
+}
+
+#verb-text span.selected{
+background:#d0e8ff;
+}
+
+#verb-text span.correct{
+background:#b8f5b8;
+}
+
+#verb-text span.wrong{
+background:#ffb8b8;
+}
+/* ul */
+
+ul{
+    font-size: 18px;
 }
