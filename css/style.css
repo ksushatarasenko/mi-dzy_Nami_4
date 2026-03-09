@@ -160,6 +160,16 @@ h3{
     color: #ff8c42;
     font-size: 20px;
 }
+.blockSzary{
+    background-color: rgb(216, 215, 215);
+    padding: 8px;
+    border-radius: 15px;
+    
+}
+.blockSzary>p{
+    font-size: 17px;
+    line-height: 0.6;
+}
 
 /*  */
 .emotion{
