@@ -297,6 +297,14 @@ width: 50%;
     width: 100%;
     margin: 0 auto;
 }
+.pdf{
+    width: 90%;
+    margin: 0 auto;
+}
+.pdf> iframe{
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Вопрос с вариантами ответов */
 
