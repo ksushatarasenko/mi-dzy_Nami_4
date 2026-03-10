@@ -274,10 +274,14 @@ border-radius:6px;
     width: 100%;
     margin: 0 auto;
     gap: 10px;
+    justify-content: space-around;
 }
 
 .two>img{
 width: 50%;
+}
+.two>div{
+    width: 100%;
 }
 .image{
     width: 40%;
