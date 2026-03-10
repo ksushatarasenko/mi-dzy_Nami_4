@@ -486,3 +486,124 @@ background:#ffb8b8;
 ul{
     font-size: 18px;
 }
+
+/* интерактивная карта слов */
+.word-map{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+.word-map span{
+background:#fff3a5;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+}
+
+.word-map span:hover{
+background:#ffd84d;
+}
+
+/* интерактивное стихотворение */
+#poem-text span{
+cursor:pointer;
+background:#fff3a5;
+padding:2px 5px;
+border-radius:4px;
+}
+
+#poem-text span:hover{
+background:#ffd84d;
+}
+.word{
+cursor:pointer;
+background:#fff3a5;
+padding:2px 6px;
+border-radius:4px;
+}
+
+.word:hover{
+background:#ffd84d;
+}
+/* окно для показа перевода */
+#word-info{
+position:fixed;
+top:20px;
+right:20px;
+width:260px;
+background:white;
+border:3px solid #ffd84d;
+border-radius:10px;
+padding:20px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+font-size:18px;
+z-index:9999;
+display:none;
+}
+.word-close{
+position:absolute;
+top:8px;
+right:10px;
+cursor:pointer;
+font-size:22px;
+font-weight:bold;
+color: red;
+}
+/* МодалОкно */
+.vocab-list{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.vocab-word{
+background:#fff3a5;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+}
+
+.vocab-word:hover{
+background:#ffd84d;
+}
+
+#vocab-modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.4);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.modal-box{
+background:white;
+padding:25px;
+border-radius:12px;
+max-width:400px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+position:relative;
+}
+
+.modal-close{
+position:absolute;
+top:10px;
+right:15px;
+font-size:22px;
+cursor:pointer;
+}
+.vocab-data{
+display:none;
+}
+
+.slowo{
+    width: 300px;
+}

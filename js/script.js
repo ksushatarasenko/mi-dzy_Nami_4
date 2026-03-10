@@ -108,33 +108,31 @@ function checkQuiz() {
 // Ułóż wydarzenia w kolejności
 const list = document.getElementById("events");
 
-if(list){
+if (list) {
+  let draggedItem = null;
 
-let draggedItem = null;
+  list.addEventListener("dragstart", (e) => {
+    draggedItem = e.target;
+    e.target.classList.add("dragging");
+  });
 
-list.addEventListener("dragstart", (e) => {
-  draggedItem = e.target;
-  e.target.classList.add("dragging");
-});
+  list.addEventListener("dragend", (e) => {
+    e.target.classList.remove("dragging");
+  });
 
-list.addEventListener("dragend", (e) => {
-  e.target.classList.remove("dragging");
-});
+  list.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    const afterElement = getDragAfterElement(list, e.clientY);
+    const draggable = document.querySelector(".dragging");
 
-list.addEventListener("dragover", (e) => {
-  e.preventDefault();
-  const afterElement = getDragAfterElement(list, e.clientY);
-  const draggable = document.querySelector(".dragging");
-
-  if (afterElement == null) {
-    list.appendChild(draggable);
-  } else {
-    list.insertBefore(draggable, afterElement);
-  }
-});
-
+    if (afterElement == null) {
+      list.appendChild(draggable);
+    } else {
+      list.insertBefore(draggable, afterElement);
+    }
+  });
 }
-// 
+//
 
 function getDragAfterElement(container, y) {
   const draggableElements = [
@@ -183,88 +181,146 @@ function checkOrder() {
 }
 
 // klik slowa
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
+  const words = document.querySelectorAll("#verb-text span");
 
-const words = document.querySelectorAll("#verb-text span")
+  words.forEach((word) => {
+    word.addEventListener("click", function () {
+      this.classList.toggle("selected");
+    });
+  });
 
-words.forEach(word => {
+  window.checkVerbs = function () {
+    let correct = true;
 
-word.addEventListener("click", function(){
+    words.forEach((word) => {
+      word.classList.remove("correct", "wrong");
 
-this.classList.toggle("selected")
+      if (word.classList.contains("selected")) {
+        if (word.dataset.verb === "true") {
+          word.classList.add("correct");
+        } else {
+          word.classList.add("wrong");
+          correct = false;
+        }
+      } else {
+        if (word.dataset.verb === "true") {
+          correct = false;
+        }
+      }
+    });
 
-})
+    const result = document.getElementById("verb-result");
 
-})
-
-window.checkVerbs = function(){
-
-let correct = true
-
-words.forEach(word=>{
-
-word.classList.remove("correct","wrong")
-
-if(word.classList.contains("selected")){
-
-if(word.dataset.verb === "true"){
-word.classList.add("correct")
-}else{
-word.classList.add("wrong")
-correct = false
-}
-
-}else{
-
-if(word.dataset.verb === "true"){
-correct = false
-}
-
-}
-
-})
-
-const result = document.getElementById("verb-result")
-
-if(correct){
-result.textContent = "Świetnie! Wszystkie czasowniki są poprawne."
-result.style.color = "green"
-}else{
-result.textContent = "Spróbuj ponownie."
-result.style.color = "red"
-}
-
-}
-
-})
+    if (correct) {
+      result.textContent = "Świetnie! Wszystkie czasowniki są poprawne.";
+      result.style.color = "green";
+    } else {
+      result.textContent = "Spróbuj ponownie.";
+      result.style.color = "red";
+    }
+  };
+});
 
 // интерактив с вводом.
 
-function checkGrammar(){
+function checkGrammar() {
+  let correct = true;
 
-let correct = true
+  document.querySelectorAll("input[data-answer]").forEach((input) => {
+    if (input.value.trim().toLowerCase() === input.dataset.answer) {
+      input.style.background = "#b8f5b8";
+    } else {
+      input.style.background = "#ffb8b8";
+      correct = false;
+    }
+  });
 
-document.querySelectorAll("input[data-answer]").forEach(input=>{
+  const result = document.getElementById("grammar-result");
 
-if(input.value.trim().toLowerCase() === input.dataset.answer){
+  if (correct) {
+    result.textContent = "Świetnie!";
+  } else {
+    result.textContent = "Spróbuj jeszcze raz.";
+  }
+}
 
-input.style.background="#b8f5b8"
+// интерактивная карта слов
+function showWord(word) {
+  const result = document.getElementById("word-result");
 
-}else{
+  const words = {
+    ojczyzna: "Ojczyzna — родина. Kraj, w którym się urodziliśmy.",
 
-input.style.background="#ffb8b8"
-correct=false
+    polska: "Polska — страна в Европе.",
 
+    flaga: "Flaga — флаг. Flaga Polski jest biało-czerwona.",
+
+    jezyk: "Język — язык. W Polsce mówi się po polsku.",
+
+    historia: "Historia — история kraju.",
+  };
+
+  result.style.display = "block";
+  result.innerHTML = words[word];
+}
+
+// интерактивное стихотворение
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".word").forEach((word) => {
+    word.addEventListener("click", function () {
+
+      const translation = this.dataset.translate;
+      const box = document.getElementById("word-info");
+
+      box.style.display = "block";
+
+      box.innerHTML =
+        "<div class='word-close'>✖</div>" +
+        "<b>" + this.textContent + "</b><br>" +
+        translation;
+
+      // обработчик закрытия
+      document.querySelector(".word-close").addEventListener("click", closeWord);
+
+    });
+  });
+
+});
+
+function closeWord() {
+  document.getElementById("word-info").style.display = "none";
+}
+// модалОкно
+document.querySelectorAll(".vocab-word").forEach(word=>{
+
+word.addEventListener("click", function(){
+
+const key=this.dataset.word
+
+const data=document.getElementById("word-"+key)
+
+const modal=document.getElementById("vocab-modal")
+
+document.getElementById("modal-content").innerHTML=data.innerHTML
+
+modal.style.display="flex"
+
+})
+
+})
+
+document.querySelector(".modal-close").addEventListener("click", closeModal)
+
+document.getElementById("vocab-modal").addEventListener("click", function(e){
+
+if(e.target.id==="vocab-modal"){
+closeModal()
 }
 
 })
 
-const result=document.getElementById("grammar-result")
-
-if(correct){
-result.textContent="Świetnie!"
-}else{
-result.textContent="Spróbuj jeszcze raz."
-}
-
+function closeModal(){
+document.getElementById("vocab-modal").style.display="none"
 }

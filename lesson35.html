@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Lekcja – Ziemia rodzinna</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleZumImage.css">
+
+</head>
+
+<body>
+    <div id="word-info"></div>
+    <!--  -->
+    <div id="vocab-modal">
+        <div class="modal-box">
+            <div class="modal-close">✖</div>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+    <!--  -->
+    <header>
+        Lekcja – „Ziemia rodzinna” – Władysław Bełza
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <p><span data-translate="Ассоциации" class="word">Skojarzenia</span> to wszystko to, co przychodzi ci do
+                głowy, gdy myślisz o danej rzeczy.</p>
+
+            <div class="title">Mapa słów</div>
+
+            <p>
+                Kliknij słowa i zobacz ich znaczenie.
+            </p>
+
+            <div class="word-map">
+
+                <span onclick="showWord('ojczyzna')">ojczyzna</span>
+
+                <span onclick="showWord('polska')">Polska</span>
+
+                <span onclick="showWord('flaga')">flaga</span>
+
+                <span onclick="showWord('jezyk')">język</span>
+
+                <span onclick="showWord('historia')">historia</span>
+
+            </div>
+
+            <div id="word-result" class="answer"></div>
+
+        </div>
+
+
+        <!-- WPROWADZENIE -->
+
+        <div class="box">
+
+            <div class="title">O czym jest ten wiersz?</div>
+
+            <p>
+                Ten wiersz opowiada o miłości do ojczyzny.
+            </p>
+
+            <p>
+                Autor opisuje piękno swojego kraju: pola, kwiaty,
+                rzeki, góry i lasy.
+            </p>
+
+            <p>
+                В этом стихотворении автор рассказывает о любви к своей родине.
+                Он описывает природу своей страны.
+            </p>
+
+        </div>
+
+
+
+        <!-- WIERSZ -->
+
+        <div class="box">
+
+            <div class="title">Czytamy wiersz</div>
+
+            <h3>Ziemia rodzinna</h3>
+            <p><i>Władysław Bełza</i></p>
+
+            <div class="two">
+                <div>
+                    <div id="poem-text">
+
+                        <p>
+                            Całem mem
+                            <span data-translate="сердце" class="word">sercem</span>,
+                            <span data-translate="душой" class="word">duszą</span> niewinną, <br>
+                            Kocham tę świętą <span data-translate="землю" class="word">ziemię</span> rodzinną, <br>
+                            Na której moja <span data-translate="колыбель" class="word">kołyska</span> stała,<br>
+                            I której dawna karmi mię
+                            <span data-translate="слава" class="word">chwała</span>.
+                        </p>
+
+                        <p>
+                            Kocham te barwne
+                            <span data-translate="цветы" class="word">kwiaty</span> na łące,<br>
+                            Kocham te
+                            <span data-translate="поля зерна" class="word">łany</span> kłosem szumiące,<br>
+                            Które mię żywią, które mię stroją, <br>
+                            I które zdobią
+                            <span data-translate="родину" class="word">Ojczyznę</span> moją.
+                        </p>
+
+                        <p>
+                            Kocham te <span data-translate="горы" class="word">góry</span>,
+                            <span data-translate="леса" class="word">lasy</span> i <span data-translate="рощи"
+                                class="word">gaje</span>, <br>
+                            Potężne <span data-translate="реки" class="word">rzeki</span>,
+                            ciche <span data-translate="ручьи" class="word">ruczaje</span>; <br>
+                            Bo w tych potokach, w wodzie u <span
+                                data-translate="zdrój — источник, родник (woda ze zdroju)" class="word">zdroja</span>,
+                            <br>
+                            Ty <span
+                                data-translate="przeglądać się — отражаться (Drzewo przegląda się w wodzie. Дерево отражается в воде.)"
+                                class="word">się przeglądasz</span> Ojczyzno moja, <br>
+                            Krwią <span
+                                data-translate="użyźnić — сделать плодородным (użyźniona ziemia плодородная земля)"
+                                class="word">użyźniona</span>, we łzach <span
+                                data-translate="skąpana — омытая (skąpana w słońcu залитая солнцем)"
+                                class="word">skąpana</span>, <br>
+                            Tak dla nas <span data-translate="droga — дорогая, ценная" class="word">droga</span> i tak
+                            kochana!
+                        </p>
+
+                    </div>
+
+                    <div id="word-info" class="answer"></div>
+                </div>
+                <div class="image" style="margin-top: -150px;">
+                    <img src="https://github.com/ksushatarasenko/polishSzkola_4klasa_assets/blob/main/polska/lekcji/lekcja35_wiersz.png?raw=true"
+                        alt="" class="zum">
+                </div>
+            </div>
+
+
+        </div>
+        
+        <!-- SŁOWNICZEK -->
+        <div class="box">
+            <div class="title">Słownictwo</div>
+            <div class="vocab-list">                
+                <div class="vocab-word" data-word="ojczyzna">
+                    <p>ojczyzna — родина</p>
+                </div>
+                <div class="vocab-word" data-word="lan">
+                    <p>łan — поле</p>
+                </div>
+                <div class="vocab-word" data-word="ruczaj">
+                    <p>ruczaj — ручей</p>
+                </div>
+                <div class="vocab-word" data-word="gaj">
+                    <p>gaj — роща</p>
+                </div>
+                <div class="vocab-word" data-word="karmic">
+                    <p>karmić — кормить</p>
+                </div>
+                <div class="vocab-word" data-word="zdroj">
+                    <p>zdrój — источник</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- modalki -->
+        <div>
+            <div class="vocab-data" id="word-ojczyzna">
+                <h3>ojczyzna — родина</h3>
+                <p>Kraj, w którym ktoś się urodził i z którym jest związany.</p>
+                <p><b>Przykład:</b></p>
+                <p>Kocham swoją ojczyznę.</p>
+                <p><em>Я люблю свою родину.</em></p>
+            </div>
+            <div class="vocab-data" id="word-lan">
+                <h3>łan — поле</h3>
+                <p>Duże pole obsiane zbożem.</p>
+                <p><b>Przykład:</b></p>
+                <p>Łany zbóż falują na wietrze.</p>
+                <p><em>Поля колышутся на ветру.</em></p>
+                <img src="https://fixar.pl/grafika/obraz-zlocisty-lan-zboz-w-swietle-slonca-2092.jpg" alt=""
+                    class="slowo">
+            </div>
+            <div class="vocab-data" id="word-ruczaj">
+                <h3>ruczaj — ручей</h3>
+                <p>Mała rzeka lub strumień.</p>
+                <p><b>Przykład:</b></p>
+                <p>Mały ruczaj płynie przez las.</p>
+                <p><em>Маленький ручей течёт через лес.</em></p>
+                <img src="https://news.store.rambler.ru/img/3dea7b4b2232d5b2611cf6865d31ece9?img-format=auto&img-1-resize=height:400,fit:max&img-2-filter=sharpen"
+                    alt="" class="slowo">
+            </div>
+            <div class="vocab-data" id="word-gaj">
+                <h3>gaj — роща</h3>
+                <p>Niewielki las lub grupa drzew.</p>
+                <p><b>Przykład:</b></p>
+                <p>W gaju rosną stare drzewa.</p>
+                <p><em>В роще растут старые деревья.</em></p>
+                <img src="https://st.depositphotos.com/1000434/2011/i/450/depositphotos_20110573-stock-photo-birchs.jpg"
+                    alt="" class="slowo">
+            </div>
+            <div class="vocab-data" id="word-karmic">
+                <h3>karmić — кормить</h3>
+                <p>Dawać jedzenie komuś lub zwierzęciu.</p>
+                <p><b>Przykład:</b></p>
+                <p>Mama karmi dziecko.</p>
+                <p><em>Мама кормит ребёнка.</em></p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Polytelis_anthopeplus_-Flying_High_Bird_Habitat_-feeding_from_hand-8b.jpg/250px-Polytelis_anthopeplus_-Flying_High_Bird_Habitat_-feeding_from_hand-8b.jpg"
+                    alt="" class="slowo">
+            </div>
+            <div class="vocab-data" id="word-zdroj">
+                <h3>zdrój — источник</h3>
+                <p>Miejsce, z którego wypływa woda.</p>
+                <p><b>Przykład:</b></p>
+                <p>Przy źródle płynie czysta woda.</p>
+                <p><em>У источника течёт чистая вода.</em></p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SpringPaniya0.jpeg" alt="" class="slowo">
+            </div>
+        </div>
+        
+        <!-- NASZE PYTANIA -->
+
+        <div class="box">
+
+            <div class="title">Czy rozumiesz tekst?</div>
+
+            <div class="quiz">
+
+                <div class="question" data-correct="A">
+
+                    <p>1. Co kocha osoba mówiąca?</p>
+
+                    <div class="option">A. swoją ojczyznę</div>
+                    <div class="option">B. inne kraje</div>
+                    <div class="option">C. morze</div>
+
+                </div>
+
+
+                <div class="question" data-correct="B">
+
+                    <p>2. Jakie miejsca opisuje autor?</p>
+
+                    <div class="option">A. miasta</div>
+                    <div class="option">B. przyrodę</div>
+                    <div class="option">C. szkołę</div>
+
+                </div>
+
+
+                <div class="question" data-correct="C">
+
+                    <p>3. Co znajduje się w wierszu?</p>
+
+                    <div class="option">A. samochody</div>
+                    <div class="option">B. domy</div>
+                    <div class="option">C. góry i rzeki</div>
+
+                </div>
+
+                <button class="check-btn" onclick="checkQuiz()">Sprawdź</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ZADANIE 1 Z PODRĘCZNIKA -->
+
+        <div class="box">
+
+            <div class="title">📖 Zadanie 1 (z podręcznika)</div>
+
+            <p>
+                Porozmawiajcie o tym,
+                w jaki sposób osoba mówiąca w wierszu
+                przedstawia swoją ojczyznę.
+            </p>
+
+            <p>
+                Co kocha osoba mówiąca?
+            </p>
+
+            <p>
+                ________________________________________
+            </p>
+
+            <p>
+                ________________________________________
+            </p>
+
+            <button onclick="toggleAnswer('zad1')">Pokaż przykład</button>
+
+            <div id="zad1" class="answer">
+
+                <p>
+                    Osoba mówiąca kocha swoją ojczyznę.
+                    Kocha jej przyrodę: pola, kwiaty, rzeki,
+                    góry i lasy.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ZADANIE 2 -->
+
+        <div class="box">
+
+            <div class="title">📖 Zadanie 2 (z podręcznika)</div>
+
+            <p>
+                Przeczytaj podane informacje.
+            </p>
+
+            <p>
+                W 1795 roku Rosja, Austria i Prusy dokonały ostatecznego rozbioru Polski, w wyniku czego Rzeczpospolita
+                zniknęła z mapy Europy. Przez wiele lat Polacy próbowali odzyskać niepodległość. Wybuchały powstania
+                zbrojne (na przykład powstanie listopadowe i powstanie styczniowe), które zakończyły się klęską.
+                Pielęgnowano też polską mowę, kulturę i pamięć o historii kraju. Rzeczpospolita odzyskała wolność w 1918
+                roku, po zakończeniu | wojny światowej.
+            </p>
+
+            <p>Władysław Bełza urodził się w 1847 roku. Polska była już wówczas pod zaborami od pomad 50, lat. Poeta
+                wzrastał w bardzo patriotycznej rodzinie. Wiele swoich wierszy pisał dla dzieci i młodzieży. W ten
+                sposób chciał ksztaltować młode pokolenia w duchu miłości do utraconej ojczyzny. Sam nie doczekał wolnej
+                Polski, zmart w 1913 roku.</p>
+
+        </div>
+
+
+
+        <!-- ZADANIE 3 -->
+
+        <div class="box">
+
+            <div class="title">📖 Zadanie 3 (z podręcznika)</div>
+
+            <p>
+                Nazwij uczucia, które towarzyszą osobie mówiącej w wierszu.
+            </p>
+
+            <p>
+                ________________________________________
+            </p>
+
+            <p>
+                ________________________________________
+            </p>
+
+            <button onclick="toggleAnswer('zad3')">Pokaż przykład</button>
+
+            <div id="zad3" class="answer">
+
+                <p>
+                    Osoba mówiąca czuje miłość,
+                    dumę i szacunek do swojej ojczyzny.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ZADANIE 4 -->
+
+        <div class="box">
+
+            <div class="title">📖 Zadanie 4 (z podręcznika)</div>
+
+            <p>
+                Napisz,
+                co dla ciebie znaczy „ziemia rodzinna”.
+            </p>
+
+            <p>
+                ________________________________________
+            </p>
+
+            <p>
+                ________________________________________
+            </p>
+
+            <button onclick="toggleAnswer('zad4')">Pokaż przykład</button>
+
+            <div id="zad4" class="answer">
+
+                <p>
+                    Ziemia rodzinna to kraj,
+                    w którym się urodziłem
+                    i który jest dla mnie bardzo ważny.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <a href="index.html" class="back">
+            ⬅ Powrót do wszystkich lekcji
+        </a>
+
+
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/imageZum.js"></script>
+
+</body>
+
+</html>
