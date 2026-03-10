@@ -324,3 +324,22 @@ closeModal()
 function closeModal(){
 document.getElementById("vocab-modal").style.display="none"
 }
+
+// mapa
+document.querySelectorAll(".map-point").forEach(point=>{
+
+point.addEventListener("click",function(){
+
+const city=this.dataset.city
+
+const data=document.getElementById("city-"+city)
+
+const modal=document.getElementById("vocab-modal")
+
+document.getElementById("modal-content").innerHTML=data.innerHTML
+
+modal.style.display="flex"
+
+})
+
+})

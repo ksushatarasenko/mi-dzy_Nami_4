@@ -607,3 +607,34 @@ display:none;
 .slowo{
     width: 300px;
 }
+.simwol{
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* mapa */
+.map-container{
+position:relative;
+max-width:700px;
+margin:auto;
+}
+
+.map-image{
+width:100%;
+display:block;
+}
+
+.map-point{
+position:absolute;
+width:12px;
+height:12px;
+background:red;
+border-radius:50%;
+border:2px solid white;
+cursor:pointer;
+box-shadow:0 0 4px black;
+}
+
+.map-point:hover{
+transform:scale(1.3);
+}
