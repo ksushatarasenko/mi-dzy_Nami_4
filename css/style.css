@@ -206,6 +206,12 @@ display:grid;
 grid-template-columns:1fr 1fr;
 gap:10px;
 }
+.vocab-list{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+justify-content: space-around;
+}
 
 .emotion{
 background:#efe3a3;
@@ -553,12 +559,7 @@ font-weight:bold;
 color: red;
 }
 /* МодалОкно */
-.vocab-list{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-justify-content: space-around;
-}
+
 
 .vocab-word{
 background:#fff3a5;

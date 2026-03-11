@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Lekcja – Na turystycznym szlaku</title>
+    <title>Lekcja – Jan Brzechwa: Globus</title>
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleZumImage.css">
@@ -12,797 +12,296 @@
 </head>
 
 <body>
-    <div id="word-info"></div>
-    <!--  -->
-    <div id="vocab-modal">
+    <div id="vocab-modal" class="modal">
         <div class="modal-box">
-            <div class="modal-close">✖</div>
+
+            <span class="modal-close">✖</span>
+
             <div id="modal-content"></div>
+
         </div>
     </div>
-    <!--  -->
+
     <header>
-        Lekcja 37 — Na turystycznym szlaku
+        Lekcja 38 – Jan Brzechwa „Globus”
     </header>
 
     <div class="container">
-        <!-- Карта Польши -->
-        <div class="box">
 
-            <div class="title">Interaktywna mapa Polski</div>
 
-            <div class="map-container">
+        <!-- Cel lekcji -->
 
-                <img src="https://as2.ftcdn.net/v2/jpg/00/60/01/27/1000_F_60012741_kLa9dTYjYdNjjt1rOXbJkB8Tapej1UUc.jpg"
-                    class="map-image">
+        <div class="rule">
 
-                <div class="map-point" style="top:45%; left:65.4%" data-city="warszawa"></div>
+            <b>Cel lekcji</b>
 
-                <div class="map-point" style="top:78%; left:56.5%" data-city="krakow"></div>
-
-                <div class="map-point" style="top:12.5%; left:43%" data-city="gdansk"></div>
-
-                <div class="map-point" style="top:42%; left:27.2%" data-city="poznan"></div>
-
-                <div class="map-point" style="top:62%; left:27.5%" data-city="wroclaw"></div>
-
-                <div class="map-point" style="top:52%; left:50.5%" data-city="lodz"></div>
-
-                <div class="map-point" style="top:59.7%; left:80.2%" data-city="lublin"></div>
-
-                <div class="map-point" style="top:24.2%; left:6.2%" data-city="szczecin"></div>
-
-                <div class="map-point" style="top:46.6%; left:13.4%" data-city="zielonagora"></div>
-
-                <div class="map-point" style="top:65.3%; left:62%" data-city="kielce"></div>
-
-                <div class="map-point" style="top:78%; left:76%" data-city="rzeszow"></div>
-
-                <div class="map-point" style="top:75%; left:47%" data-city="katowice"></div>
-
-                <div class="map-point" style="top:69%; left:36.5%" data-city="opole"></div>
-
-                <div class="map-point" style="top:29.5%; left:84.5%" data-city="bialystok"></div>
-
-                <div class="map-point" style="top:20.5%; left:60%" data-city="olsztyn"></div>
-
-                <div class="map-point" style="top:32%; left:43%" data-city="torun"></div>
-            </div>
-
-        </div>
-
-        <!-- miasta -->
-        <div>
-            <div class="city-data" id="city-gdansk">
-
-                <h3>Gdańsk – województwo pomorskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Jedno z najważniejszych miast portowych Polski.
-                    Tutaj rozpoczęła się II wojna światowa (Westerplatte).
-                    W Gdańsku powstał także ruch „Solidarność”.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li><a href="https://tourguideservicegdansk.pl/zuraw-gdanski/" target="_blank">Żuraw Gdański</a></li>
-                    <li>Fontanna Neptuna</li>
-                    <li>Długi Targ</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>
-                    Fontanna Neptuna.
-                </p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Gda%C5%84sk_Neptun_2.jpg" alt="" class="simwol">
-
-            </div>
-            <!-- Poznań -->
-            <div class="city-data" id="city-poznan">
-
-                <h3>Poznań – województwo wielkopolskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Jedno z najstarszych miast Polski.
-                    Pierwsza stolica państwa polskiego.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li><a href="https://pl.wikipedia.org/wiki/Ratusz_w_Poznaniu" target="_blank">Ratusz w Poznaniu</a></li>
-                    <li><a href="https://www.katedra.archpoznan.pl/" target="_blank">Katedra na Ostrowie Tumskim</a></li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p><a href="https://pl.wikipedia.org/wiki/Kozio%C5%82ki_pozna%C5%84skie" target="_blank">Koziołki poznańskie na ratuszu.</a>                    
-                </p>
-                <img src="https://brandingmonitor.pl/wp-content/uploads/2024/05/rezler-7-scale-1800-0-1024x768.jpg" alt="" class="simwol">
-            </div>
-            <!-- Warszawa -->
-            <div class="city-data" id="city-warszawa">
-
-                <h3>Warszawa – województwo mazowieckie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Stolica Polski i największe miasto kraju.
-                    Centrum polityczne i kulturalne Polski.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li><a href="https://pl.wikipedia.org/wiki/Zamek_Kr%C3%B3lewski_w_Warszawie" target="_blank">Zamek Królewski</a></li>
-                    <li><a href="https://pl.wikipedia.org/wiki/Stare_Miasto_w_Warszawie" target="_blank">Stare Miasto</a></li>
-                    <li><a href="https://pkin.pl/en/home/" target="_blank">Pałac Kultury i Nauki</a></li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p><a href="https://pl.wikipedia.org/wiki/Warszawska_Syrenka" target="_blank">Syrenka Warszawska.</a>
-                    
-                </p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdPeEfjoPW7lZOc_s08ZM_jMl_CG37mtE1AQ&s" alt="" class="simwol" style="width: 40%;">
-
-            </div>
-            <!-- Łódź -->
-            <div class="city-data" id="city-lodz">
-
-                <h3>Łódź – województwo łódzkie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    W XIX wieku była wielkim centrum przemysłu tekstylnego.
-                    Nazywano ją „polskim Manchesterem”.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li><a href="https://pl.wikipedia.org/wiki/Ulica_Piotrkowska_w_%C5%81odzi" target="_blank">Ulica Piotrkowska</a></li>
-                    <li><a href="https://pl.wikipedia.org/wiki/Manufaktura_(%C5%81%C3%B3d%C5%BA)" target="_blank">Manufaktura</a></li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>
-                    Ulica Piotrkowska.
-                </p>
-                <img src="https://www.miasto.zgierz.pl/sites/default/files/pliki/loga/herb_lodzi.jpg" alt="" class="simwol">
-
-            </div>
-            <!-- Wrocław -->
-            <div class="city-data" id="city-wroclaw">
-
-                <h3> – województwo dolnośląskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Jedno z najstarszych miast Polski.
-                    Ważny ośrodek kultury i nauki.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li><a href="https://pl.wikipedia.org/wiki/Rynek_we_Wroc%C5%82awiu" target="_blank">Rynek we Wrocławiu</a></li>
-                    <li><a href="https://pl.wikipedia.org/wiki/Ostr%C3%B3w_Tumski_(Wroc%C5%82aw)" target="_blank">Ostrów Tumski</a></li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>
-                    <a href="https://pl.wikipedia.org/wiki/Wroc%C5%82awskie_krasnale" target="_blank">Krasnale wrocławskie</a>
-                </p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Herb_wroclaw.svg" alt="" class="simwol">
-
-            </div>
-            <!-- Kraków  -->
-            <div class="city-data" id="city-krakow">
-
-                <h3>Kraków – województwo małopolskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Dawna stolica Polski.
-                    Jedno z najważniejszych miast historycznych kraju.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li><a href="https://pl.wikipedia.org/wiki/Zamek_Kr%C3%B3lewski_na_Wawelu" target="_blank">Zamek Królewski na Wawelu</a></li>
-                    <li><a href="https://pl.wikipedia.org/wiki/Rynek_G%C5%82%C3%B3wny_w_Krakowie" target="_blank">Rynek Główny</a></li>
-                    <li><a href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_archiprezbiterialny_Wniebowzi%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Marii_Panny_w_Krakowie" target="_blank">Kościół Mariacki</a></li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>
-                    <a href="https://pl.wikipedia.org/wiki/Smok_Wawelski_(rze%C5%BAba)" target="_blank">Smok Wawelski</a>
-                </p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/POL_Krak%C3%B3w_COA.svg" alt="" class="simwol" style="width: 50%;">
-
-            </div>
-            <!-- Lublin -->
-            <div class="city-data" id="city-lublin">
-
-                <h3>Lublin – województwo lubelskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    W 1569 roku podpisano tu Unię Lubelską,
-                    która połączyła Polskę i Litwę.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Zamek Lubelski</li>
-                    <li>Stare Miasto</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>
-                    Brama Krakowska.
-                </p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/POL_Lublin_COA_1.svg" alt="" class="simwol">
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-szczecin">
-
-                <h3>Szczecin – województwo zachodniopomorskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Duże miasto portowe nad Odrą i blisko Morza Bałtyckiego.
-                    Ważny ośrodek handlu morskiego.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Zamek Książąt Pomorskich</li>
-                    <li>Wały Chrobrego</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Gryf pomorski.</p>
-
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-zielonagora">
-
-                <h3>Zielona Góra – województwo lubuskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Miasto znane z tradycji winiarskich.
-                    Co roku odbywa się tu święto winobrania.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Stare Miasto</li>
-                    <li>Palmiarnia Zielonogórska</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Winogrona.</p>
-
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-opole">
-
-                <h3>Opole – województwo opolskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Jedno z najstarszych miast Śląska.
-                    Znane z festiwalu polskiej piosenki.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Rynek w Opolu</li>
-                    <li>Wieża Piastowska</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Amfiteatr opolski.</p>
-
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-katowice">
-
-                <h3>Katowice – województwo śląskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Centrum przemysłu i górnictwa na Śląsku.
-                    Ważne miasto gospodarcze Polski.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Spodek</li>
-                    <li>Muzeum Śląskie</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Hala widowiskowa Spodek.</p>
-
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-rzeszow">
-
-                <h3>Rzeszów – województwo podkarpackie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Ważne miasto południowo-wschodniej Polski.
-                    Szybko rozwijający się ośrodek nauki i przemysłu.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Rynek w Rzeszowie</li>
-                    <li>Zamek Lubomirskich</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Pomnik Czynu Rewolucyjnego.</p>
-
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-bialystok">
-
-                <h3>Białystok – województwo podlaskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Duże miasto w północno-wschodniej Polsce.
-                    Znane z wielokulturowej historii.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Pałac Branickich</li>
-                    <li>Park Branickich</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Pałac Branickich.</p>
-
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-olsztyn">
-
-                <h3>Olsztyn – województwo warmińsko-mazurskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Miasto na Mazurach – regionie jezior.
-                    Mieszkał tu i pracował Mikołaj Kopernik.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Zamek Kapituły Warmińskiej</li>
-                    <li>Stare Miasto</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Zamek w Olsztynie.</p>
-
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-torun">
-
-                <h3>Toruń – województwo kujawsko-pomorskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Miasto Mikołaja Kopernika.
-                    Jedno z najlepiej zachowanych średniowiecznych miast w Polsce.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Dom Mikołaja Kopernika</li>
-                    <li>Stare Miasto</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Pierniki toruńskie.</p>
-
-            </div>
-            <!--  -->
-            <div class="city-data" id="city-kielce">
-
-                <h3>Kielce – województwo świętokrzyskie</h3>
-
-                <p>🏛 <b>Rola historyczna</b></p>
-                <p>
-                    Miasto w Górach Świętokrzyskich.
-                    Ważny ośrodek regionu świętokrzyskiego.
-                </p>
-
-                <p>🏰 <b>Zabytki</b></p>
-                <ul>
-                    <li>Pałac Biskupów Krakowskich</li>
-                    <li>Rezerwat Kadzielnia</li>
-                </ul>
-
-                <p>⭐ <b>Symbol miasta</b></p>
-                <p>Pałac Biskupów Krakowskich.</p>
-
-            </div>
-        </div>
-        Szczecin
-        Zielona Góra
-        Opole
-        Katowice
-        Rrzeszów
-        Białystok
-        Olsztyn
-        Toruń
-        Kielce
-
-
-
-        <!-- WPROWADZENIE -->
-
-        <div class="box">
-
-            <div class="title">Polskie symbole państwowe</div>
-
-            <p>Polska, jak każde państwo, ma swoje symbole państwowe.</p>
-            <p>Należą do nich:</p>
             <ul>
-                <li>orzeł biały</li>
-                <li>biało-czerwone barwy</li>
-                <li>hymn „Mazurek Dąbrowskiego”</li>
+                <li>Czytanie wiersza — чтение стихотворения</li>
+                <li>Zrozumienie tekstu — понимание текста</li>
+                <li>Nazwy geograficzne Polski — география Польши</li>
+                <li>Wyobraźnia — развитие воображения</li>
             </ul>
-            <p>Каждое государство имеет свои символы.
-                Символами Польши являются герб, флаг и гимн.</p>
-        </div>
-        <!-- WIERSZ -->
-
-        <div class="box">
-
-            <div class="title">Godło i flaga Polski</div>
-            <div class="two">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRYOQHDsj2eS4ihB3A4GTN7F1oVlYiXy_NSg&s"
-                    style="width: 40%;">
-                <img src="https://www.opiekun.kalisz.pl/media/images/publications/2020/04/flaga-polski-e1490820858409.jpg"
-                    style="width: 40%;">
-            </div>
 
         </div>
 
 
 
-        <!-- HYMN -->
+        <!-- Słowniczek -->
+
         <div class="box">
 
-            <div class="title">Hymn Polski</div>
+            <div class="title">Słowniczek</div>
 
-            <h3>Mazurek Dąbrowskiego</h3>
+            <div class="emotions-grid vocab-list">
 
-            <p><i>Józef Wybicki</i></p>
-
-            <p>
-                Jeszcze Polska nie zginęła,<br>
-                Kiedy my żyjemy.<br>
-                Co nam obca przemoc wzięła,<br>
-                Szablą odbierzemy.
-            </p>
-
-            <p>
-                Marsz, marsz, Dąbrowski,<br>
-                Z ziemi włoskiej do Polski.<br>
-                Za twoim przewodem<br>
-                Złączym się z narodem.
-            </p>
-
-            <p>
-                Przejdziem Wisłę,<br>
-                Przejdziem Wartę,<br>
-                Będziem Polakami.<br>
-                Dał nam przykład Bonaparte,<br>
-                Jak zwyciężać mamy.
-            </p>
-
-        </div>
-        <!-- Słownictwo -->
-        <div class="box">
-
-            <div class="title">Słownictwo</div>
-
-            <div class="vocab-list">
-
-                <div class="vocab-word" data-word="mazurek">
-                    <p>mazurek — мазурка</p>
+                <div class="emotion vocab-word" data-word="globus">
+                    <p class="p">globus — глобус</p>
                 </div>
 
-                <div class="vocab-word" data-word="szabla">
-                    <p>szabla — сабля</p>
+                <div class="emotion vocab-word" data-word="arbuz">
+                    <p class="p">arbuz — арбуз</p>
                 </div>
 
-                <div class="vocab-word" data-word="przemoc">
-                    <p>przemoc — насилие</p>
+                <div class="emotion vocab-word" data-word="łobuz">
+                    <p class="p">łobuz — хулиган</p>
                 </div>
 
-                <div class="vocab-word" data-word="narod">
-                    <p>naród — народ</p>
+                <div class="emotion vocab-word" data-word="guz">
+                    <p class="p">guz — шишка</p>
                 </div>
 
-                <div class="vocab-word" data-word="zwyciezac">
-                    <p>zwyciężać — побеждать</p>
-                </div>
-                <div class="vocab-word" data-word="dabrowski">
-                    <p>Jan Henryk Dąbrowski</p>
+                <div class="emotion vocab-word" data-word="dolina">
+                    <p class="p">dolina — долина</p>
                 </div>
 
-                <div class="vocab-word" data-word="napoleon">
-                    <p>Napoleon Bonaparte</p>
+                <div class="emotion vocab-word" data-word="wywrócić">
+                    <p class="p">wywrócić — перевернуть</p>
                 </div>
 
-                <div class="vocab-word" data-word="czarniecki">
-                    <p>Stefan Czarniecki</p>
+                <div class="emotion vocab-word" data-word="popłynąć">
+                    <p class="p">popłynąć — потечь</p>
                 </div>
 
-                <div class="vocab-word" data-word="zabor">
-                    <p>zabór szwedzki</p>
-                </div>
-
-                <div class="vocab-word" data-word="jeno">
-                    <p>jeno — tylko</p>
-                </div>
-
-                <div class="vocab-word" data-word="pono">
-                    <p>pono — ponoć</p>
-                </div>
-
-                <div class="vocab-word" data-word="taraban">
-                    <p>taraban — bęben wojskowy</p>
+                <div class="emotion vocab-word" data-word="przepaść">
+                    <p class="p">przepaść — пропасть</p>
                 </div>
 
             </div>
-
         </div>
         <!-- Скрытые блоки словаря -->
         <div>
-            <div class="vocab-data" id="word-mazurek">
-                <h3>mazurek — мазурка</h3>
-                <p>Tradycyjny polski taniec.</p>
+
+            <div class="vocab-data" id="word-globus">
+                <h3>globus — глобус</h3>
+                <p>model Ziemi pokazujący kontynenty i państwa.</p>
                 <p><b>Przykład:</b></p>
-                <p>Mazurek jest popularnym tańcem.</p>
-                <p><em>Мазурка — традиционный польский танец.</em></p>
-            </div>
-            <div class="vocab-data" id="word-szabla">
-                <h3>szabla — сабля</h3>
-                <p>Rodzaj broni używanej przez żołnierzy.</p>
-                <p><b>Przykład:</b></p>
-                <p>Żołnierz walczył szablą.</p>
-                <p><em>Солдат сражался саблей.</em></p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Mzwdr_XXXX_ml_008.jpg" alt=""
+                <p>Na lekcji geografii nauczyciel pokazał nam globus.</p>
+                <p><em>На уроке географии учитель показал нам глобус.</em></p>
+                <img src="https://www.astroshop.pl/Produktbilder/zoom/20495_5/Raethgloben-Globus-DFNI-30-15.jpg" alt=""
                     class="slowo">
             </div>
-            <div class="vocab-data" id="word-przemoc">
-                <h3>przemoc — насилие</h3>
-                <p>Użycie siły przeciwko komuś.</p>
-                <p><em>Применение силы против кого-либо.</em></p>
+            <div class="vocab-data" id="word-arbuz">
+                <h3>arbuz — арбуз</h3>
+                <p>duży zielony owoc z czerwonym, soczystym środkiem.</p>
+                <p><b>Przykład:</b></p>
+                <p>Latem lubię jeść słodkiego arbuza.</p>
+                <p><em>Летом я люблю есть сладкий арбуз.</em></p>
+                <img src="https://pierwszesmaki.pl/wp-content/uploads/2025/01/1iz42vpbzcp58f6" alt="" class="slowo">
             </div>
-            <div class="vocab-data" id="word-narod">
-                <h3>naród — народ</h3>
-                <p>Ludzie należący do jednego kraju.</p>
-                <p><em>Люди, принадлежащие одной стране.</em></p>
+            <div class="vocab-data" id="word-łobuz">
+                <h3>łobuz — хулиган, шалун</h3>
+                <p>osoba, która robi psoty lub zachowuje się niegrzecznie.</p>
+                <p><b>Przykład:</b></p>
+                <p>Ten łobuz znowu zrobił żart w klasie.</p>
+                <p><em>Этот хулиган снова пошутил в классе.</em></p>
+                <img src="https://static.prsa.pl/images/31dd30cc-e61e-4ee4-979d-aa40bbfdd419.jpg" alt="" class="slowo">
             </div>
-            <div class="vocab-data" id="word-zwyciezac">
-                <h3>zwyciężać — побеждать</h3>
-                <p>Osiągnąć wygraną w walce lub zawodach.</p>
-                <p><em>Достигните победы в бою или соревновании.</em></p>
-            </div>
-            <div class="vocab-data" id="word-dabrowski">
-                <h3>Jan Henryk Dąbrowski</h3>
-                <p>Polski generał (1755–1818).</p>
-                <p> Wsławił się udziałem w walkach o niepodległość Polski.</p>
-                <p><em>Он прославился своим участием в борьбе за независимость Польши.</em></p>
-                <img src="https://cms-v1-files.superszkolna.pl/sites/803/wiadomosci/64641/fotos/orign/dob2a.jpg" alt=""
+            <div class="vocab-data" id="word-guz">
+                <h3>guz — шишка</h3>
+                <p>opuchlizna, która pojawia się po uderzeniu.</p>
+                <p><b>Przykład:</b></p>
+                <p>Po uderzeniu w głowę pojawił się duży guz.</p>
+                <p><em>После удара на голове появилась большая шишка.</em></p>
+                <img src="https://orteka.ru/upload/iblock/e18/ho06lqu4a1lnbv68hs88ilnog03uj8p3.jpg" alt=""
                     class="slowo">
             </div>
-            <div class="vocab-data" id="word-napoleon">
-                <h3>Napoleon Bonaparte</h3>
-                <p>Cesarz Francuzów (1769–1821).</p>
-                <p>Prowadził wojny z wrogami Polski.</p>
-                <p>Wielu Polaków wierzyło, że pomoże odzyskać niepodległość.</p>
-                <p><em>Многие поляки верили, что он поможет вернуть независимость.</em></p>
-                <img src="https://geneee.org/g?lang=pl;m=IM;p=Napol%C3%A9on;n=Bonaparte;oc=0;k=/napoleon.0.bonaparte"
+            <div class="vocab-data" id="word-dolina">
+                <h3>dolina — долина</h3>
+                <p>teren położony między górami lub wzgórzami.</p>
+                <p><b>Przykład:</b></p>
+                <p>Rzeka płynie przez zieloną dolinę.</p>
+                <p><em>Река течёт через зелёную долину.</em></p>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/6c/6d/70/20190809-141455-largejpg.jpg?w=900&h=-1&s=1"
                     alt="" class="slowo">
             </div>
-            <div class="vocab-data" id="word-czarniecki">
-                <h3>Stefan Czarniecki</h3>
-                <p>Dowódca wojsk polskich w XVII wieku.</p>
-                <p>Walczł ze Szwedami podczas potopu szwedzkiego. </p>
-                <p><em>Он сражался против шведов во время Шведского потопа.</em></p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg8PwnQTLNEuKysSZmMpEH7YWUdwHJd_tFZQ&s"
+            <div class="vocab-data" id="word-wywrócić">
+                <h3>wywrócić — перевернуть</h3>
+                <p>sprawić, że coś zmieni pozycję lub przewróci się.</p>
+                <p><b>Przykład:</b></p>
+                <p>Silny wiatr wywrócił parasol.</p>
+                <p><em>Сильный ветер перевернул зонт.</em></p>
+                <img src="https://pliki.sadyogrody.pl/i/03/55/06/035506_r0_980.jpg" alt="" class="slowo">
+            </div>
+            <div class="vocab-data" id="word-popłynąć">
+                <h3>popłynąć — потечь, поплыть</h3>
+                <p>zacząć płynąć lub poruszać się po wodzie.</p>
+                <p><b>Przykład:</b></p>
+                <p>Po deszczu rzeka popłynęła szybciej.</p>
+                <p><em>После дождя река потекла быстрее.</em></p>
+                <img src="https://tvn24.pl/_e/i/najnowsze/cdn-zdjecie353e901515af678d3f74e499947933d0-sredniowieczne-miasteczko-tonie-w-weltawie-ph3265044/alternates/WEBP_LANDSCAPE_480"
                     alt="" class="slowo">
             </div>
-            <div class="vocab-data" id="word-zabor">
-                <h3>zabór (<em>захват, оккупация</em> ) szwedzki ( <em>шведский</em>)</h3>
-                <p>Это период, который называется: <b><em>Deluge (Swedish invasion of Poland)</em></b></p>
-                <p><b>Potop szwedzki</b> — шведский потоп.</p>
-                <p>Это война, когда Швеция напала на Польшу в XVII веке.</p>
-                <p>W XVII wieku Szwedzi zajęli Polskę.</p>
-                <p>В 1655 году армия Швеции вторглась в Речь Посполитую.</p>
-                <p>Шведы:</p>
-                <ul>
-                    <li>заняли многие города</li>
-                    <li>захватили Варшаву и Краков</li>
-                    <li>грабили страну</li>
-                </ul>
-                <p>Польша была сильно разрушена.</p>
-                <p>Одним из командиров был: Stefan Czarniecki</p>
-                <p>Polacy pod wodzą Czarnieckiego wyparli ich z kraju.</p>
-                <p><em>Поляки под предводительством Чарнецкого вытеснили их из страны.</em></p>
-                <p>В гимне есть строки: <b>Jak Czarniecki do Poznania
-                        Po szwedzkim zaborze</b></p>
-                <p>Смысл такой: <em>Как Чарнецкий после шведского захвата
-                        вернулся, чтобы спасать родину.</em></p>
-
-            </div>
-            <div class="vocab-data" id="word-jeno">
-                <h3>jeno - старое польское слово</h3>
-                <p>Znaczy: <b>tylko</b>.</p>
-                <p>Пример из гимна: <b>Słuchaj jeno = Słuchaj tylko = Слушай только</b></p>
-            </div>
-            <div class="vocab-data" id="word-pono">
-                <h3>pono - старое польское слово.</h3>
-                <p>
-                    Znaczy: <b>ponoć</b>.
-                </p>
-                <p>По-русски: «якобы», «говорят», «будто».</p>
-                <p>
-                    Czyli: podobno.
-                </p>
-                <p><b>Słuchaj jeno, pono nasi biją w tarabany.</b></p>
-                <p><em>Слушай, говорят, наши бьют в барабаны.</em></p>
-            </div>
-            <div class="vocab-data" id="word-taraban">
-                <h3>taraban</h3>
-                <p>
-                    Duży bęben używany
-                    w dawnym wojsku.
-                </p>
-                <p><em>Большой барабан, использовавшийся в старой армии.</em></p>
-                <img src="https://radiokielce.pl/wp-content/uploads/2022/04/image00001-151316.jpg" alt="" class="slowo">
-
+            <div class="vocab-data" id="word-przepaść">
+                <h3>przepaść — пропасть, исчезнуть</h3>
+                <p>zniknąć całkowicie, nie być już widocznym.</p>
+                <p><b>Przykład:</b></p>
+                <p>Mój ołówek gdzieś przepadł.</p>
+                <p><em>Мой карандаш куда-то пропал.</em></p>
+                <img src="https://cdn.facet.onet.pl/1/DFak9lLaHR0cDovL29jZG4uZXUvaW1hZ2VzL3B1bHNjbXMvTW1FN01EQV8vNTJjZGE4YmYxYzMwZTIzMDgxOTA3YzVhYTRlYmFlNzYuanBnkpUDACLNA-jNAjKTBc0JYM0E7N4AAqEwB6ExBA"
+                    alt="" class="slowo">
             </div>
         </div>
 
 
-        <!-- ZADANIE 1 Z PODRĘCZNIKA -->
-        <div class="box">
-            <div class="title">📖 Zadanie 1</div>
-            <p>Wskaż w hymnie fragmenty, które odwołują się do historii Polski.</p>
-            <p>
-                ________________________________
-            </p>
-            <p>
-                ________________________________
-            </p>
 
-            <button onclick="toggleAnswer('zad1')">Pokaż przykład</button>
+        <!-- Wiersz -->
 
-            <div id="zad1" class="answer">
-                <p>„Co nam obca przemoc wzięła” <em>— Что у нас забрала чужая сила (чужое насилие).</em></p>
-                <p>„Marsz, marsz Dąbrowski, z ziemi włoskiej do Polski” <em>— Марш, марш, Домбровский, из итальянской
-                        земли в Польшу.</em></p>
-                <p>„Dał nam przykład Bonaparte, jak zwyciężać mamy” <em>— Бонапарт показал нам пример, как нужно
-                        побеждать.</em> </p>
-                <p>„Jak Czarniecki do Poznania <br>
-                    Po szwedzkim zaborze, <br>
-                    Dla ojczyzny ratowania <br>
-                    Wrócim się przez morze.”</p>
-                <p><em>— Как Чарнецкий в Познань<br>
-                        после шведского захвата,<br>
-                        чтобы спасти родину,<br>
-                        вернёмся через море.</em></p>
-            </div>
-
-        </div>
-
-        <!-- ZADANIE 2 -->
         <div class="box">
 
-            <div class="title">📖 Zadanie 2</div>
+            <div class="title">Wiersz</div>
+            <div class="two">
+                <p style="width: 100%;">
 
-            <p>
-                Przeczytaj informacje o powstaniu hymnu.
-            </p>
+                    W szkole na stole<br>
+                    Stał globus – wielkości arbuza,<br>
+                    Aż tu naraz jakiś łobuz<br>
+                    Nabił mu guza.<br><br>
 
-            <p>
-                „Mazurek Dąbrowskiego” powstał w 1797 roku
-                we Włoszech.
-            </p>
+                    Z tego wynika historia całkiem niezwykła:<br><br>
 
-            <p>
-                Autorem jest Józef Wybicki.
-            </p>
+                    Siedlce wpadły do Krakowa,<br>
+                    Kraków zmienił się w jezioro,<br>
+                    Nowy Targ za San się schował,<br>
+                    A San urósł w górę sporą.<br><br>
 
-            <p>
-                W 1927 roku pieśń została
-                hymnem Polski.
-            </p>
-            <button onclick="toggleAnswer('a2')">Pokaż odpowiedź</button>
+                    Tatry, nagle wywrócone,<br>
+                    Okazały się w dolinie,<br>
+                    Wieprz popłynął w inną stronę<br>
+                    I zawadził aż o Gdynię.<br><br>
 
-            <div id="a2" class="answer">
-                <p>Józef Wybicki twórca pieśni „Mazurek Dąbrowskiego” miał nadzieje na powrót do ojczyzny i wyzwolenie
-                    jej z rąk wrogów. Z kolei pieśni dodawała w walkach wiary w wolność.</p>
+                    Tam gdzie wpierw płynęła Wisła,<br>
+                    Wyskoczyła wielka góra,<br>
+                    Rzeka Bzura całkiem prysła,<br>
+                    A powstała góra Bzura.<br><br>
+
+                    Stary Giewont zląkł się wielce<br>
+                    I przykucnął pod parkanem,<br>
+                    Każdy myślał, że to Kielce,<br>
+                    A to było Zakopane.<br><br>
+
+                    Łódź pobiegła pod Opole<br>
+                    W jakichś bardzo ważnych sprawach –<br>
+                    Tylko nikt nie wiedział w szkole,<br>
+                    Gdzie podziała się Warszawa.<br><br>
+
+                    Po prostu przepadła – i już!<br><br>
+
+                    Trzeba prędzej oddać globus do naprawy,<br>
+                    Bo nie może Polska istnieć bez Warszawy!
+
+                </p>
+                <div class="image">
+                    <img src="https://github.com/ksushatarasenko/polishSzkola_4klasa_assets/blob/main/polska/lekcji/lekcja38_wiersz.png?raw=true"
+                        alt="" class="zum">
+                </div>
             </div>
 
-        </div>
-        <!-- rule -->
-        <div class="rule">
-
-            <p class="rule-title">Refren</p>
-
-            <p>
-                Refren to regularnie powtarzająca się część tekstu,
-                najczęściej w utworach przeznaczonych do śpiewania.
-            </p>
-
-            <p>
-                <em>
-                    Рефрен — это часть текста, которая регулярно повторяется,
-                    чаще всего в песнях.
-                </em>
-            </p>
 
         </div>
 
-        <!-- ZADANIE 3 -->
+
+
+        <!-- Pytania do tekstu -->
+
         <div class="box">
 
-            <div class="title">📖 Zadanie 3</div>
+            <div class="title">Zrozumienie tekstu</div>
 
-            <p>
-                Porozmawiajcie:
-            </p>
+            <p>1. Dlaczego wszystko pomieszało się na globusie?</p>
+
+            <p>2. Jakie miasta pojawiają się w wierszu?</p>
+
+            <p>3. Co stało się z rzekami i górami?</p>
+
+            <p>4. Dlaczego Warszawa jest bardzo ważna dla Polski?</p>
+            <button onclick="toggleAnswer('a1')">Pokaż odpowiedź</button>
+
+            <div id="a1" class="answer">
+
+                <p>1. Bo jakiś łobuz uderzył w globus i zrobił na nim guza.</p>
+                <p>2. W wierszu pojawiają się miasta: Kraków, Siedlce, Gdynia, Kielce, Zakopane, Łódź, Opole i Warszawa.
+                </p>
+                <p>Rzeki zmieniły swój bieg, a góry wywróciły się i znalazły się w innych miejscach.</p>
+                <p>Warszawa jest bardzo ważna, bo jest stolicą Polski i Polska nie może istnieć bez Warszawy.</p>
+            </div>
+        </div>
+
+
+
+        <!-- Geografia -->
+
+        <div class="box">
+
+            <div class="title">Nazwy geograficzne</div>
+
+            <p>Znajdź w wierszu nazwy geograficzne.</p>
 
             <ul>
 
-                <li>
-                    kiedy śpiewa się hymn Polski
-                </li>
+                <li><b>Miasta:</b> Kraków, Siedlce, Gdynia, Kielce, Zakopane, Łódź, Opole, Warszawa</li>
 
-                <li>
-                    jak należy się zachowywać
-                    podczas hymnu
-                </li>
+                <li><b>Rzeki:</b> Wisła, San, Wieprz, Bzura</li>
+
+                <li><b>Góry:</b> Tatry, Giewont</li>
+
+                <li><b>Regiony:</b> Śląsk, Pomorze, Poznańskie, Ziemie Zachodnie</li>
 
             </ul>
-            <button onclick="toggleAnswer('a3')">Pokaż odpowiedź</button>
-
-            <div id="a3" class="answer">
-                <p>Mazurek Dąbrowskiego jest śpiewany podczas różnych uroczystości państwowych, na zawodach sportowych.
-                    Na przykład podczas święta niepodległości 11 listopada. Podczas śpiewania hymnu należy stać na
-                    baczność, poważnie.</p>
+            <div class="image" style="width: 80%;">
+                <img src="https://github.com/ksushatarasenko/polishSzkola_4klasa_assets/blob/main/polska/lekcji/lekcja38_mapa.png?raw=true"
+                    alt="" class="zum">
             </div>
+            <div class="image">
+                <img src="https://i.pinimg.com/564x/ac/08/db/ac08db0a97078a42090ac21684a6cec4.jpg" alt="" class="zum">
+            </div>
+
         </div>
-        <!-- ZADANIE 4 -->
+
+
+
+        <!-- Zadanie -->
+
         <div class="box">
 
-            <div class="title">📖 Zadanie 4</div>
+            <div class="title">Zadanie</div>
 
             <p>
-                Naucz się tekstu hymnu na pamięć.
+
+                Wyobraź sobie, że globus znowu się popsuł.
+                Napisz 2–3 zabawne zdania o tym, co mogło się stać w Polsce.
+
             </p>
 
         </div>
+
+
+        <!-- Назад -->
         <a href="index.html" class="back">
             ⬅ Powrót do wszystkich lekcji
         </a>
-
-
     </div>
-
-    <script src="./js/script.js"></script>
     <script src="./js/imageZum.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 
