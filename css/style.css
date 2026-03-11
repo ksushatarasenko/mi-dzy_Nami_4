@@ -557,6 +557,7 @@ color: red;
 display:flex;
 flex-wrap:wrap;
 gap:10px;
+justify-content: space-around;
 }
 
 .vocab-word{
@@ -623,6 +624,10 @@ margin:auto;
 width:100%;
 display:block;
 }
+.city-data{
+    width:100%;
+    display:none;
+}
 
 .map-point{
 position:absolute;
@@ -637,4 +642,11 @@ box-shadow:0 0 4px black;
 
 .map-point:hover{
 transform:scale(1.3);
+}
+
+/*  */
+.line_1{
+    width: 25px;
+    font-size: 20px;
+    text-align: center;
 }

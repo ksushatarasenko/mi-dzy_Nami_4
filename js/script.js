@@ -343,3 +343,30 @@ modal.style.display="flex"
 })
 
 })
+// проверка ответа
+function checkAnswers(setId){
+
+const set=document.getElementById(setId)
+
+const inputs=set.querySelectorAll("input")
+
+inputs.forEach(input=>{
+
+const correct=input.dataset.answer.trim()
+const user=input.value.trim()
+
+if(user===correct){
+
+input.style.border="2px solid green"
+input.style.background="#d4edda"
+
+}else{
+
+input.style.border="2px solid red"
+input.style.background="#f8d7da"
+
+}
+
+})
+
+}
