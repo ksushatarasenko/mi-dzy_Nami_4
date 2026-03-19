@@ -3,20 +3,29 @@
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.8);
+
+    overflow: auto; /* 🔥 ВАЖНО */
+    
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 2000;
-    cursor: zoom-out;
+    align-items: flex-start; /* 🔥 чтобы начиналась сверху */
+    
+    padding: 40px;
 }
 
 /* увеличенная картинка */
 .image-overlay img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: none;   /* 🔥 убираем лимит */
+    max-height: none;
+
+    width: auto;
+    height: auto;
+
     border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.5);
-    animation: zoomIn 0.3s ease;
+
+    transform: scale(1.5); /* или 2 */
+    transform-origin: top center;
+    max-width: 900px; /* или 1500px */
 }
 
 @keyframes zoomIn {
