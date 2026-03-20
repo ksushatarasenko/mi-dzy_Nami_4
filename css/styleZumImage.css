@@ -4,18 +4,19 @@
     inset: 0;
     background: rgba(0,0,0,0.8);
 
-    overflow: auto; /* 🔥 ВАЖНО */
-    
+    overflow: auto;
+
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* 🔥 чтобы начиналась сверху */
-    
+    align-items: center;
+
     padding: 40px;
 }
 
+
 /* увеличенная картинка */
-.image-overlay img {
-    max-width: none;   /* 🔥 убираем лимит */
+/* .image-overlay img {
+    max-width: none;   
     max-height: none;
 
     width: auto;
@@ -23,11 +24,18 @@
 
     border-radius: 10px;
 
-    transform: scale(1.5); /* или 2 */
+    transform: scale(1.5); 
     transform-origin: top center;
-    max-width: 900px; /* или 1500px */
-}
+    max-width: 700px;
+} */
 
+.image-overlay img {
+    max-width: 98%;
+    max-height: 98%;
+    object-fit: contain;
+
+    border-radius: 10px;
+}
 @keyframes zoomIn {
     from { transform: scale(0.7); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
@@ -40,4 +48,14 @@
 
 .zum:hover {
     transform: scale(1.05);
+}
+
+.image-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+    z-index: 1000;
 }

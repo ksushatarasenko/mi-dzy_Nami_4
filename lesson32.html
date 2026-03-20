@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleZumImage.css">
+    <link rel="stylesheet" href="./css/styleRu.css">
 
 </head>
 
@@ -18,8 +19,33 @@
     </header>
 
     <div class="container">
+        <div class="box">
+            <h3><a href="https://multipodreczniki.apps.gwo.pl/demos/37f00f9e-936c-4099-b277-17bbc0597c76?page=255"
+                    target="_blank"> ksizka 255 - 256</a></h3>
+            <button class="ru-btn modal-trigger" data-modal="ru_1"><img src="./icons/nauczyciel.png" alt=""
+                    class="icons"></button>
 
-      
+            <div class="modal" data-modal="ru_1">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Что обозначает наречие?</h3>
+                    <h4>ЦЕЛИ, ВЫТЕКАЮЩИЕ ИЗ УЧЕБНОЙ ПРОГРАММЫ</h4>
+                    <h6>Языковое образование:</h6>
+                    <p>Распознаёт в высказываниях части речи (глагол, существительное, прилагательное, наречие) и
+                        определяет их функции в тексте (II.1.1).</p>
+                    <p>Различает изменяемые и неизменяемые части речи (II.1.2).</p>
+                    <h6>ПЛАН РАБОТЫ НА УРОКЕ</h6>
+                    <ol>
+                        <li>Анализ ситуаций, изображённых на рисунках. Распознавание наречий.</li>
+                        <li>Наблюдение за функцией наречия в высказывании.</li>
+                        <li>Выделение (нахождение) наречий.</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+
 
         <!-- Zadanie 1 -->
         <div class="box">
@@ -32,7 +58,13 @@
                 <img src="https://github.com/ksushatarasenko/polishSzkola_4klasa_assets/blob/main/polska/lekcji/lekcja31_1.png?raw=true"
                     alt="" class="zum">
             </div>
-            <div class="text">
+            <button class="ru-btn modal-trigger" data-modal="ru_2"><img src="./icons/czytamy.png" alt=""
+                    class="icons"></button>
+
+            <div class="modal" data-modal="ru_2">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="text">
                 <p>-No jesteś!</p>
                 <p>- Czy zawsze i wszędzie musisz się spóźniać?</p>
                 <p>- Jesteśmy wszyscy, ruszamy! Antek zamyka grupę! </p>
@@ -45,10 +77,20 @@
                     Jedziemy równo i bezpiecznie!<br>
                     Już niedługo odpoczynek.</p>
             </div>
+
+                </div>
+            </div>
+            
             <button onclick="toggleAnswer('a1')">Pokaż odpowiedź</button>
 
             <div id="a1" class="answer">
                 <p>Zawsze, wszędzie, późno, wczoraj, potem, najlepiej, równo, bezpiecznie, niedługo.</p>
+            </div>
+            <div class="video">
+                <iframe src="./pdf/polski_4_podr_mn_zalacznik_s255.pdf" frameborder="0"></iframe>
+            </div>
+            <div class="image" style="width: 80%;">
+                <img src="./dopImage/255_1.png" alt="" class="zum">
             </div>
         </div>
 
@@ -94,7 +136,9 @@
         <!-- Zadanie 3 -->
 
         <div class="video">
-            <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/785e295fd4544beaac94369600f43ee2?themeId=46&templateId=2&fontStackId=0" width="500" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe style="max-width:100%"
+                src="https://wordwall.net/pl/embed/785e295fd4544beaac94369600f43ee2?themeId=46&templateId=2&fontStackId=0"
+                width="500" height="480" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="pdf">
@@ -102,10 +146,14 @@
         </div>
 
         <div class="video">
-            <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/cf3f50cbd690490f9eda2e38802647bd?themeId=27&templateId=2&fontStackId=0" width="500" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe style="max-width:100%"
+                src="https://wordwall.net/pl/embed/cf3f50cbd690490f9eda2e38802647bd?themeId=27&templateId=2&fontStackId=0"
+                width="500" height="480" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video">
-            <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/b7f7a11b9eaf46ef9c46de1b56c6a694?themeId=22&templateId=45&fontStackId=0" width="500" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe style="max-width:100%"
+                src="https://wordwall.net/pl/embed/b7f7a11b9eaf46ef9c46de1b56c6a694?themeId=22&templateId=45&fontStackId=0"
+                width="500" height="480" frameborder="0" allowfullscreen></iframe>
         </div>
 
 
@@ -117,6 +165,7 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/imageZum.js"></script>
+    <script src="./js/scriptRu.js"></script>
 
 </body>
 
