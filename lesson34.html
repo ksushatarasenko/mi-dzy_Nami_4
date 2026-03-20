@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleZumImage.css">
+    <link rel="stylesheet" href="./css/styleRu.css">
+
 
 </head>
 
@@ -18,6 +20,37 @@
     </header>
 
     <div class="container">
+        <div class="box">
+            <h3><a href="https://multipodreczniki.apps.gwo.pl/demos/37f00f9e-936c-4099-b277-17bbc0597c76?page=258"
+                    target="_blank"> ksizka 258 - 259</a></h3>
+            <button class="ru-btn modal-trigger" data-modal="ru_1"><img src="./icons/nauczyciel.png" alt=""
+                    class="icons"></button>
+
+            <div class="modal" data-modal="ru_1">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Кто и кого изображает во дворе? (Данута Вавилов «Лужисты»)</h3>
+                    <h4>ЦЕЛИ, ВЫТЕКАЮЩИЕ ИЗ УЧЕБНОЙ ПРОГРАММЫ</h4>
+                    <h6>Литературное и культурное образование:</h6>
+                    <p><em>Выделяет поэтические образы в поэзии.</em></p>
+                    <p><em>Распознаёт художественный вымысел.</em></p>
+                    <p><em>Характеризует лирического героя в прочитанных произведениях.</em></p>
+                    <p><em>Определяет тему и проблематику произведения.</em></p>
+                    <p><em>Понимает специфику текстов культуры, относящихся к литературе.</em></p>
+                    <h6>Языковое образование:</h6>
+                    <p><em>Определяет отправителя и получателя высказывания.</em></p>
+                    <h6>ПЛАН РАБОТЫ НА УРОКЕ</h6>
+                    <ol>
+                        <li>Заполнение схем, связанных с ситуациями на дворе.</li>
+                        <li>Знакомство с произведением Дануты Вавилов «Лужицы».</li>
+                        <li>Анализ элементов художественного мира произведения: героев и ситуации, в которой они
+                            представлены.</li>
+                        <li>Интерпретация высказывания говорящего.</li>
+                        <li>Определение автора произведения, говорящего и героев.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
 
         <!-- Wiersz -->
 
@@ -27,7 +60,8 @@
 
             <h3>Kałużyści</h3>
             <p><i>Danuta Wawiłow</i></p>
-
+            <audio src="https://multipodreczniki.apps.gwo.pl/api/resources/f751bb17-2dbe-4002-b15e-b283d8dbfce6"
+                controls></audio>
             <div class="two">
                 <div>
                     <p>
@@ -73,17 +107,20 @@
         <div class="box">
 
             <div class="title">O czym jest wiersz?</div>
-            <p>
-                Ten wiersz opowiada o dzieciach, które bawią się na podwórku po deszczu.
-            </p>
-            <p>
-                Autor opisuje zabawę tak, jakby była bardzo ważną pracą.
-            </p>
-            <p>
-                В этом стихотворении дети играют во дворе после дождя.
-                Автор шутливо описывает игру как серьёзную работу.
-            </p>
+            <button onclick="toggleAnswer('ru1')">Tłumaczenie</button>
 
+            <div id="ru1" class="answer">
+                <p>
+                    Ten wiersz opowiada o dzieciach, które bawią się na podwórku po deszczu.
+                </p>
+                <p>
+                    Autor opisuje zabawę tak, jakby była bardzo ważną pracą.
+                </p>
+                <p>
+                    В этом стихотворении дети играют во дворе после дождя.
+                    Автор шутливо описывает игру как серьёзную работу.
+                </p>
+            </div>
         </div>
 
 
@@ -93,46 +130,55 @@
         <div class="box">
 
             <div class="title">Słowa z tekstu</div>
+            <button class="ru-btn modal-trigger" data-modal="ru_2"><img src="./icons/slownik.png" alt=""
+                    class="icons"></button>
 
-            <div class="emotions-grid">
+            <div class="modal" data-modal="ru_2">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="emotions-grid">
 
-                <div class="emotion">
-                    <p class="p">podwórko — двор</p>
-                    <p>Dzieci bawią się na podwórku.</p>
-                    <p><em>Дети играют во дворе.</em></p>
+                        <div class="emotion">
+                            <p class="p">podwórko — двор</p>
+                            <p>Dzieci bawią się na podwórku.</p>
+                            <p><em>Дети играют во дворе.</em></p>
+                        </div>
+
+                        <div class="emotion">
+                            <p class="p">kałuża — лужа</p>
+                            <p>Po deszczu na drodze są kałuże.</p>
+                            <p><em>После дождя на дороге лужи.</em></p>
+                        </div>
+
+                        <div class="emotion">
+                            <p class="p">patyk — палка, ветка</p>
+                            <p>Chłopiec znalazł patyk w lesie.</p>
+                            <p><em>Мальчик нашёл палку в лесу.</em></p>
+                        </div>
+
+                        <div class="emotion">
+                            <p class="p">liść — лист</p>
+                            <p>Jesienią liście spadają z drzew.</p>
+                            <p><em>Осенью листья падают с деревьев.</em></p>
+                        </div>
+
+                        <div class="emotion">
+                            <p class="p">szyszka — шишка</p>
+                            <p>Dzieci rzucają się szyszkami.</p>
+                            <p><em>Дети бросаются шишками.</em></p>
+                        </div>
+
+                        <div class="emotion">
+                            <p class="p">karmić — кормить</p>
+                            <p>Dziewczynka karmi kota.</p>
+                            <p><em>Девочка кормит кота.</em></p>
+                        </div>
+
+                    </div>
                 </div>
-
-                <div class="emotion">
-                    <p class="p">kałuża — лужа</p>
-                    <p>Po deszczu na drodze są kałuże.</p>
-                    <p><em>После дождя на дороге лужи.</em></p>
-                </div>
-
-                <div class="emotion">
-                    <p class="p">patyk — палка, ветка</p>
-                    <p>Chłopiec znalazł patyk w lesie.</p>
-                    <p><em>Мальчик нашёл палку в лесу.</em></p>
-                </div>
-
-                <div class="emotion">
-                    <p class="p">liść — лист</p>
-                    <p>Jesienią liście spadają z drzew.</p>
-                    <p><em>Осенью листья падают с деревьев.</em></p>
-                </div>
-
-                <div class="emotion">
-                    <p class="p">szyszka — шишка</p>
-                    <p>Dzieci rzucają się szyszkami.</p>
-                    <p><em>Дети бросаются шишками.</em></p>
-                </div>
-
-                <div class="emotion">
-                    <p class="p">karmić — кормить</p>
-                    <p>Dziewczynka karmi kota.</p>
-                    <p><em>Девочка кормит кота.</em></p>
-                </div>
-
             </div>
+
+
 
         </div>
         <!-- Wyjaśnienie słów -->
@@ -249,7 +295,7 @@
 
         </div>
 
-        <!-- ZADANIA Z PODRĘCZNIKA -->
+        <!-- ZADANIA 2 -->
 
         <div class="box">
 
@@ -293,8 +339,6 @@
 
         </div>
 
-
-
         <!-- Zadanie 2b -->
 
         <div class="box">
@@ -330,9 +374,6 @@
             </div>
 
         </div>
-
-
-
         <!-- Zadanie 2c -->
 
         <div class="box">
@@ -367,8 +408,6 @@
 
         </div>
 
-
-
         <!-- Zadanie 3 -->
 
         <div class="box">
@@ -383,13 +422,68 @@
             <p>
                 Użyj słów:
             </p>
+            <div class="image" style="width: 100%;">
+                <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/polska/dopImage/259_1.png"
+                    alt="" class="zum">
+            </div>
 
-            <div class="word">żartobliwie</div>
-            <div class="word">z humorem</div>
-            <div class="word">z przymrużeniem oka</div>
-            <div class="word">poważnie</div>
-            <div class="word">serio</div>
+            <button class="ru-btn modal-trigger" data-modal="ru_3"><img src="./icons/slownik.png" alt=""
+                    class="icons"></button>
 
+            <div class="modal" data-modal="ru_3">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div>
+                        <h6>🟡 żartobliwie — шутливо, в шутку</h6>
+                        <p>👉 Когда говоришь несерьёзно, с юмором</p>
+                        <p><b>📌 Пример:</b></p>
+                        <p>Powiedział to żartobliwie. - <em>Он сказал это шутливо.</em></p>
+                        <p>💡 Часто это не прямой юмор, а лёгкая подколка или игра слов.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>🟡 z humorem — с юмором</h6>
+                        <p>👉 Говоришь весело, с хорошим настроением</p>
+                        <p><b>📌 Пример:</b></p>
+                        <p>Opowiada historię z humorem. - <em>Он рассказывает историю с юмором.</em></p>
+                        <p>💡 Это мягче, чем „żartobliwie” — просто приятный, весёлый тон.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>🟡 z przymrużeniem oka — с иронией / «подмигивая»</h6>
+                        <p>👉 Не буквально, с намёком, немного несерьёзно</p>
+                        <p><b>📌 Пример:</b></p>
+                        <p>Trzeba to traktować z przymrużeniem oka. - <em>К этому нужно относиться с иронией.</em></p>
+                        <p>💡 Часто значит: «не воспринимай слишком серьёзно».</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>🔵 poważnie — серьёзно</h6>
+                        <p>👉 Без шуток, официально или строго</p>
+                        <p><b>📌 Пример:</b></p>
+                        <p>Mówię poważnie. - <em>Я говорю серьёзно.</em></p>
+                        <p>💡 Может звучать строго или даже немного холодно.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>🔵 serio — серьёзно (разговорное)</h6>
+                        <p>👉 То же, что „poważnie”, но более разговорное</p>
+                        <p><b>📌 Пример:</b></p>
+                        <p>Serio? Naprawdę tak było? - <em>Серьёзно? Правда так было?</em></p>
+                        <p>💡 Часто используется как реакция — удивление или недоверие.</p>
+                    </div>
+                    <hr>
+                    <h4>⚡ Быстрое сравнение:</h4>
+                    <ul>
+                        <li>😄 żartobliwie → шутка</li>
+                        <li>😄 z humorem → весело</li>
+                        <li>😉 z przymrużeniem oka → ирония</li>
+                        <li>😐 poważnie → серьёзно</li>
+                        <li>😲 serio → «правда?!»</li>
+                    </ul>
+
+                </div>
+            </div>
             <br>
 
             <p>
@@ -428,6 +522,39 @@
         <div class="box">
 
             <div class="title">📖 Zadanie 4 (z podręcznika)</div>
+            <button class="ru-btn modal-trigger" data-modal="ru_4"><img src="./icons/nauczyciel.png" alt=""
+                    class="icons"></button>
+
+            <div class="modal" data-modal="ru_4">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h4>Задание 4.</h4>
+                    <p>Распознавание и определение говорящего лица в произведении — одна из самых сложных умений в начальной школе. Важно донести до учеников (что наглядно показано на схеме), что автор находится вне мира, который он изображает.</p>
+                    <p>Схему можно заполнить вместе на доске или самостоятельно после распечатки.</p>
+                    <h4>🧩 Что нужно сделать в задании</h4>
+                    <p class="p22"><b>1. Найти три роли:</b></p>
+                    <p>Тебе нужно определить в тексте (и по картинке):</p>
+                    <p>автора (кто написал)</p>
+                    <p>говорящего (osoba mówiąca) — кто «рассказывает» в тексте</p>
+                    <p>героев — кто действует в сюжете</p>
+                    <h6>🔍 По пунктам:</h6>
+                    <p><b>a</b>) 👉 Просто прочитать информацию об авторе (Данута Вавилов — это и есть автор)</p>
+                    <p><b>b)</b> 👉 Посмотреть на картинку и понять:</p>
+                    <p>Кто есть кто:</p>
+                    <ul>
+                        <li>👩 слева (женщина) → автор</li>
+                        <li>👨 в центре (мужчина) → говорящий / рассказчик</li>
+                        <li>👧👦 справа (дети) → герои</li>
+                    </ul>
+                    <h6>🧠 Главная идея задания</h6>
+                    <p>👉 Автор ≠ рассказчик ≠ герои</p>
+                    <ul>
+                        <li>Автор — реальный человек (вне текста)</li>
+                        <li>Говорящий — «голос» внутри текста</li>
+                        <li>Герои — персонажи, о которых рассказывают</li>
+                    </ul>
+                </div>
+            </div>
 
             <p>
                 Rozpoznaj w utworze „Kałużyści” osobę mówiącą i bohaterów.
@@ -445,6 +572,9 @@
             <p>
                 Bohaterowie: ______________________
             </p>
+            <div class="video">
+                <iframe src="./pdf/polski_4_podr_mn_schemat_s259.pdf" frameborder="0"></iframe>
+            </div>
 
             <button onclick="toggleAnswer('zad4')">Pokaż odpowiedź</button>
 
@@ -527,6 +657,8 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/imageZum.js"></script>
+    <script src="./js/scriptRu.js"></script>
+
 
 </body>
 
