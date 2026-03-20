@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleZumImage.css">
+    <link rel="stylesheet" href="./css/styleRu.css">
+
 
 </head>
 
@@ -26,6 +28,38 @@
     </header>
 
     <div class="container">
+        <div class="box">
+            <h3><a href="https://multipodreczniki.apps.gwo.pl/demos/37f00f9e-936c-4099-b277-17bbc0597c76?page=260"
+                    target="_blank"> ksizka 260 - 262</a></h3>
+            <button class="ru-btn modal-trigger" data-modal="ru_1"><img src="./icons/nauczyciel.png" alt=""
+                    class="icons"></button>
+
+            <div class="modal" data-modal="ru_1">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>О родине словами поэта прошлого.</h3>
+                    <h4>ЦЕЛИ, ВЫТЕКАЮЩИЕ ИЗ УЧЕБНОЙ ПРОГРАММЫ</h4>
+                    <h6>Литературное и культурное образование:</h6>
+                    <p><em>Знает и распознаёт в литературном тексте эпитет, переносное значение и определяет их
+                            функции.</em>
+                    <p><em>Использует при интерпретации текстов собственный опыт и элементы знаний о культуре.</em></p>
+                    <p><em>Определяет ценности, важные для героя.</em></p>
+                    <p><em>Понимает специфику текстов культуры, относящихся к литературе.</em></p>
+                    <p><em>Соотносит содержание текстов культуры с собственным опытом.</em></p>
+                    </p>
+                    <h6>Создание высказываний:</h6>
+                    <p><em>Создаёт логичное, семантически полное и упорядоченное высказывание.</em></p>
+                    <h6>ПЛАН РАБОТЫ НА УРОКЕ</h6>
+                    <ol>
+                        <li>Беседа, направленная на понимание понятий «Польша» и «родина».</li>
+                        <li>Знакомство со стихотворением Владислава Бельзы «Родная земля».</li>
+                        <li>Самостоятельное выполнение заданий к тексту.</li>
+                        <li>Обсуждение рабочих листов.</li>
+                        <li>Написание небольшого высказывания, связанного с ценностями, важными для учеников.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
         <div class="box">
             <p><span data-translate="Ассоциации" class="word">Skojarzenia</span> to wszystko to, co przychodzi ci do
                 głowy, gdy myślisz o danej rzeczy.</p>
@@ -53,31 +87,6 @@
             <div id="word-result" class="answer"></div>
 
         </div>
-
-
-        <!-- WPROWADZENIE -->
-
-        <div class="box">
-
-            <div class="title">O czym jest ten wiersz?</div>
-
-            <p>
-                Ten wiersz opowiada o miłości do ojczyzny.
-            </p>
-
-            <p>
-                Autor opisuje piękno swojego kraju: pola, kwiaty,
-                rzeki, góry i lasy.
-            </p>
-
-            <p>
-                В этом стихотворении автор рассказывает о любви к своей родине.
-                Он описывает природу своей страны.
-            </p>
-
-        </div>
-
-
 
         <!-- WIERSZ -->
 
@@ -142,90 +151,120 @@
                         alt="" class="zum">
                 </div>
             </div>
-
-
         </div>
-        
+        <!-- WPROWADZENIE -->
+
+        <div class="box">
+
+            <div class="title">O czym jest ten wiersz?</div>
+            <button onclick="toggleAnswer('ru1')">Tłumaczenie</button>
+
+            <div id="ru1" class="answer">
+                <p>
+                    Ten wiersz opowiada o miłości do ojczyzny.
+                </p>
+
+                <p>
+                    Autor opisuje piękno swojego kraju: pola, kwiaty,
+                    rzeki, góry i lasy.
+                </p>
+
+                <p>
+                    В этом стихотворении автор рассказывает о любви к своей родине.
+                    Он описывает природу своей страны.
+                </p>
+            </div>
+        </div>
+
         <!-- SŁOWNICZEK -->
         <div class="box">
             <div class="title">Słownictwo</div>
-            <div class="vocab-list">                
-                <div class="vocab-word" data-word="ojczyzna">
-                    <p>ojczyzna — родина</p>
+            <button class="ru-btn modal-trigger" data-modal="ru_2"><img src="./icons/slownik.png" alt=""
+                    class="icons"></button>
+
+            <div class="modal" data-modal="ru_2">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h4>SŁOWNICZEK</h4>
+                    <div class="vocab-list">
+                        <div class="vocab-word" data-word="ojczyzna">
+                            <p>ojczyzna — родина</p>
+                        </div>
+                        <div class="vocab-word" data-word="lan">
+                            <p>łan — поле</p>
+                        </div>
+                        <div class="vocab-word" data-word="ruczaj">
+                            <p>ruczaj — ручей</p>
+                        </div>
+                        <div class="vocab-word" data-word="gaj">
+                            <p>gaj — роща</p>
+                        </div>
+                        <div class="vocab-word" data-word="karmic">
+                            <p>karmić — кормить</p>
+                        </div>
+                        <div class="vocab-word" data-word="zdroj">
+                            <p>zdrój — источник</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="vocab-word" data-word="lan">
-                    <p>łan — поле</p>
+            </div>
+            <!-- modalki -->
+            <div>
+                <div class="vocab-data" id="word-ojczyzna">
+                    <h3>ojczyzna — родина</h3>
+                    <p>Kraj, w którym ktoś się urodził i z którym jest związany.</p>
+                    <p><b>Przykład:</b></p>
+                    <p>Kocham swoją ojczyznę.</p>
+                    <p><em>Я люблю свою родину.</em></p>
                 </div>
-                <div class="vocab-word" data-word="ruczaj">
-                    <p>ruczaj — ручей</p>
+                <div class="vocab-data" id="word-lan">
+                    <h3>łan — поле</h3>
+                    <p>Duże pole obsiane zbożem.</p>
+                    <p><b>Przykład:</b></p>
+                    <p>Łany zbóż falują na wietrze.</p>
+                    <p><em>Поля колышутся на ветру.</em></p>
+                    <img src="https://fixar.pl/grafika/obraz-zlocisty-lan-zboz-w-swietle-slonca-2092.jpg" alt=""
+                        class="slowo">
                 </div>
-                <div class="vocab-word" data-word="gaj">
-                    <p>gaj — роща</p>
+                <div class="vocab-data" id="word-ruczaj">
+                    <h3>ruczaj — ручей</h3>
+                    <p>Mała rzeka lub strumień.</p>
+                    <p><b>Przykład:</b></p>
+                    <p>Mały ruczaj płynie przez las.</p>
+                    <p><em>Маленький ручей течёт через лес.</em></p>
+                    <img src="https://news.store.rambler.ru/img/3dea7b4b2232d5b2611cf6865d31ece9?img-format=auto&img-1-resize=height:400,fit:max&img-2-filter=sharpen"
+                        alt="" class="slowo">
                 </div>
-                <div class="vocab-word" data-word="karmic">
-                    <p>karmić — кормить</p>
+                <div class="vocab-data" id="word-gaj">
+                    <h3>gaj — роща</h3>
+                    <p>Niewielki las lub grupa drzew.</p>
+                    <p><b>Przykład:</b></p>
+                    <p>W gaju rosną stare drzewa.</p>
+                    <p><em>В роще растут старые деревья.</em></p>
+                    <img src="https://st.depositphotos.com/1000434/2011/i/450/depositphotos_20110573-stock-photo-birchs.jpg"
+                        alt="" class="slowo">
                 </div>
-                <div class="vocab-word" data-word="zdroj">
-                    <p>zdrój — источник</p>
+                <div class="vocab-data" id="word-karmic">
+                    <h3>karmić — кормить</h3>
+                    <p>Dawać jedzenie komuś lub zwierzęciu.</p>
+                    <p><b>Przykład:</b></p>
+                    <p>Mama karmi dziecko.</p>
+                    <p><em>Мама кормит ребёнка.</em></p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Polytelis_anthopeplus_-Flying_High_Bird_Habitat_-feeding_from_hand-8b.jpg/250px-Polytelis_anthopeplus_-Flying_High_Bird_Habitat_-feeding_from_hand-8b.jpg"
+                        alt="" class="slowo">
+                </div>
+                <div class="vocab-data" id="word-zdroj">
+                    <h3>zdrój — источник</h3>
+                    <p>Miejsce, z którego wypływa woda.</p>
+                    <p><b>Przykład:</b></p>
+                    <p>Przy źródle płynie czysta woda.</p>
+                    <p><em>У источника течёт чистая вода.</em></p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SpringPaniya0.jpeg" alt=""
+                        class="slowo">
                 </div>
             </div>
         </div>
-        
-        <!-- modalki -->
-        <div>
-            <div class="vocab-data" id="word-ojczyzna">
-                <h3>ojczyzna — родина</h3>
-                <p>Kraj, w którym ktoś się urodził i z którym jest związany.</p>
-                <p><b>Przykład:</b></p>
-                <p>Kocham swoją ojczyznę.</p>
-                <p><em>Я люблю свою родину.</em></p>
-            </div>
-            <div class="vocab-data" id="word-lan">
-                <h3>łan — поле</h3>
-                <p>Duże pole obsiane zbożem.</p>
-                <p><b>Przykład:</b></p>
-                <p>Łany zbóż falują na wietrze.</p>
-                <p><em>Поля колышутся на ветру.</em></p>
-                <img src="https://fixar.pl/grafika/obraz-zlocisty-lan-zboz-w-swietle-slonca-2092.jpg" alt=""
-                    class="slowo">
-            </div>
-            <div class="vocab-data" id="word-ruczaj">
-                <h3>ruczaj — ручей</h3>
-                <p>Mała rzeka lub strumień.</p>
-                <p><b>Przykład:</b></p>
-                <p>Mały ruczaj płynie przez las.</p>
-                <p><em>Маленький ручей течёт через лес.</em></p>
-                <img src="https://news.store.rambler.ru/img/3dea7b4b2232d5b2611cf6865d31ece9?img-format=auto&img-1-resize=height:400,fit:max&img-2-filter=sharpen"
-                    alt="" class="slowo">
-            </div>
-            <div class="vocab-data" id="word-gaj">
-                <h3>gaj — роща</h3>
-                <p>Niewielki las lub grupa drzew.</p>
-                <p><b>Przykład:</b></p>
-                <p>W gaju rosną stare drzewa.</p>
-                <p><em>В роще растут старые деревья.</em></p>
-                <img src="https://st.depositphotos.com/1000434/2011/i/450/depositphotos_20110573-stock-photo-birchs.jpg"
-                    alt="" class="slowo">
-            </div>
-            <div class="vocab-data" id="word-karmic">
-                <h3>karmić — кормить</h3>
-                <p>Dawać jedzenie komuś lub zwierzęciu.</p>
-                <p><b>Przykład:</b></p>
-                <p>Mama karmi dziecko.</p>
-                <p><em>Мама кормит ребёнка.</em></p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Polytelis_anthopeplus_-Flying_High_Bird_Habitat_-feeding_from_hand-8b.jpg/250px-Polytelis_anthopeplus_-Flying_High_Bird_Habitat_-feeding_from_hand-8b.jpg"
-                    alt="" class="slowo">
-            </div>
-            <div class="vocab-data" id="word-zdroj">
-                <h3>zdrój — источник</h3>
-                <p>Miejsce, z którego wypływa woda.</p>
-                <p><b>Przykład:</b></p>
-                <p>Przy źródle płynie czysta woda.</p>
-                <p><em>У источника течёт чистая вода.</em></p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SpringPaniya0.jpeg" alt="" class="slowo">
-            </div>
-        </div>
-        
         <!-- NASZE PYTANIA -->
 
         <div class="box">
@@ -272,42 +311,41 @@
 
         </div>
 
-
-
         <!-- ZADANIE 1 Z PODRĘCZNIKA -->
 
         <div class="box">
 
-            <div class="title">📖 Zadanie 1 (z podręcznika)</div>
+            <div class="title">📖 Zadanie 1 </div>
 
-            <p>
-                Porozmawiajcie o tym,
-                w jaki sposób osoba mówiąca w wierszu
+            <p>Porozmawiajcie o tym, w jaki sposób osoba mówiąca w wierszu przedstawia swoją ojczyznę.</p>
+            <p class="p22">
+                a) Uzupełnijcie schemat na podstawie wiersza – wpiszcie, co osoba mówiąca kocha oraz w jaki sposób
                 przedstawia swoją ojczyznę.
             </p>
-
-            <p>
-                Co kocha osoba mówiąca?
-            </p>
-
-            <p>
-                ________________________________________
-            </p>
-
-            <p>
-                ________________________________________
-            </p>
+            <div class="two">
+                <div class="video">
+                    <iframe src="./pdf/polski_4_podr_mn_zalacznik_s261.pdf" frameborder="0"></iframe>
+                </div>
+                <div class="video">
+                    <iframe src="./pdf/polski_4_podr_mn_schemat_s261.pdf" frameborder="0"></iframe>
+                </div>
+            </div>
+            <p class="p22">b) Nazwijcie środek artystyczny użyty w schemacie.</p>
+            <p class="p22">c) Wyjaśnijcie, dlaczego słowo „Ojczyzna” zostało zapisane wielką literą.</p>
 
             <button onclick="toggleAnswer('zad1')">Pokaż przykład</button>
 
             <div id="zad1" class="answer">
+                <p class="p22"><b>zadanie a):</b> Powiedzcie, jak osoba mówiąca w utworze ukazuje swoją ojczyznę, a następnie uzupełnijcie schemat.</p>
 
-                <p>
-                    Osoba mówiąca kocha swoją ojczyznę.
-                    Kocha jej przyrodę: pola, kwiaty, rzeki,
-                    góry i lasy.
-                </p>
-
+                <p>Schemat: ziemia święta, barwne kwiaty na łące, lany kłosem szumiące, potężne rzeki, ciche ruczaju, całym sercem, duszą niewinna.</p>
+                <p>Ojczyzna moja przygląda się, dla nas droga i tak kochana.</p>
+                <p>Bardziej stylistyczny w schemacie to epitety.</p>
+                <p class="p22"><b>zadanie b):</b> Powiedzcie, jak osoba mówiąca w utworze ukazuje swoją ojczyznę. Podajcie nazwę środka artystycznego, który umieściliście w schemacie.</p>
+                <p>Epitet to określenie rzeczownika.</p>
+                <p class="p22"><b>zadanie c):</b> Powiedzcie, jak osoba mówiąca w utworze ukazuje swoją ojczyznę. Podajcie uzasadnienie zapisania słowa „ojczyzna” wielką literą.</p>
+                <p>Słowo Ojczyzna jest napisane wielką literą, ponieważ autor wyraża wielki szacunek do swojego kraju.</p>
+                <p>Używamy wielkiej litery, gdy chcemy wyrazić szacunek.</p>
             </div>
 
         </div>
@@ -418,6 +456,8 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/imageZum.js"></script>
+    <script src="./js/scriptRu.js"></script>
+
 
 </body>
 

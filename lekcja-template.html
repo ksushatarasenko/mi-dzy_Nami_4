@@ -34,28 +34,8 @@
     </div>
     <!--  -->
     <!-- 📚 Стандарт структуры урока -->
-    <!-- 1️⃣ WPROWADZENIE – текст -->
-    <div class="box">
-
-        <div class="title">Czytamy tekst</div>
-
-        <p>pełny tekst...</p>
-
-    </div>
-
-    <!-- 2️⃣ SŁOWNICTWO -->
-    <div class="box">
-
-        <div class="emotions-grid">
-
-            <div class="emotion">
-                <p class="p">słowo — перевод</p>
-                <p><b>1.</b> przykład zdania</p>
-                <p><b>2.</b> przykład zdania</p>
-            </div>
-
-        </div>
-    </div>
+    
+    
 
     <!-- 3️⃣ CZY ROZUMIESZ TEKST -->
 
@@ -103,10 +83,7 @@
         </tr>
 
     </table>
-    <!-- 7️⃣ ROZMOWA BOHATERÓW -->
-    Ulica: __________
-    Dom: __________
-    Pies: __________
+   
     <!-- 8️⃣ KTO TO POWIEDZIAŁ -->
     <div class="question">
 
@@ -251,7 +228,7 @@ toggle.js
     Narrator mówi w prostokątnych polach tekstowych.
 </div>
 
-<!--  -->
+<!-- knopka z ikonkoj -->
 <button class="ru-btn modal-trigger" data-modal="ru_1"><img src="./icons/nauczyciel.png" alt="" class="icons"></button>
 
 <div class="modal" data-modal="ru_1">
@@ -259,6 +236,54 @@ toggle.js
         <span class="close">&times;</span>
         <h4></h4>
 
+    </div>
+</div>
+
+<!-- ,kjr slownik c kartinkoj i pojasneniem -->
+<!-- сверху основной страница див для модалки под словник -->
+<div id="vocab-modal">
+    <div class="modal-box">
+        <div class="modal-close">✖</div>
+        <div id="modal-content"></div>
+    </div>
+</div>
+<!-- SŁOWNICZEK -->
+<div class="box">
+    <div class="title">Słownictwo</div>
+    <button class="ru-btn modal-trigger" data-modal="ru_2"><img src="./icons/slownik.png" alt="" class="icons"></button>
+
+    <div class="modal" data-modal="ru_2">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>SŁOWNICZEK</h4>
+            <div class="vocab-list">
+                <div class="vocab-word" data-word="ojczyzna">
+                    <p>ojczyzna — родина</p>
+                </div>
+                <div class="vocab-word" data-word="lan">
+                    <p>łan — поле</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- modalki -->
+    <div>
+        <div class="vocab-data" id="word-ojczyzna">
+            <h3>ojczyzna — родина</h3>
+            <p>Kraj, w którym ktoś się urodził i z którym jest związany.</p>
+            <p><b>Przykład:</b></p>
+            <p>Kocham swoją ojczyznę.</p>
+            <p><em>Я люблю свою родину.</em></p>
+        </div>
+        <div class="vocab-data" id="word-lan">
+            <h3>łan — поле</h3>
+            <p>Duże pole obsiane zbożem.</p>
+            <p><b>Przykład:</b></p>
+            <p>Łany zbóż falują na wietrze.</p>
+            <p><em>Поля колышутся на ветру.</em></p>
+            <img src="https://fixar.pl/grafika/obraz-zlocisty-lan-zboz-w-swietle-slonca-2092.jpg" alt="" class="slowo">
+        </div>
     </div>
 </div>
 

@@ -76,6 +76,10 @@ border-radius:10px;
 margin:20px 0;
 position: relative;
 }
+.rule-title{
+    font-size: 24px;
+    color: #e76515;
+}
 .absolute{
     position: absolute;
 
@@ -125,6 +129,22 @@ p{
     font-size: 212px;
     color: blue;
 }
+.p22{
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(193, 23, 193);
+}
+.p24{
+    font-size: 23px;
+    padding: 10px;
+}
+.red{
+    color: red;
+}
+ul>li,
+ol>li{
+    font-size: 18px;
+}
 .end{
     text-align: right;
     font-size: 12 px;
@@ -133,6 +153,10 @@ p{
 h4{
     color: rgb(0, 128, 122);
     font-size: 24px;
+}
+h5{
+    color: rgb(193, 3, 104);
+    font-size: 22px;
 }
 
 h6{
@@ -290,22 +314,22 @@ border-radius:6px;
     padding: 2%;
     width: 100%;
     margin: 0 auto;
-    gap: 10px;
+    gap: 5px;
     justify-content: space-around;
+}
+.two>div{
+    width: 100%;
 }
 
 .two>img{
 width: 50%;
 }
-.two>div{
-    width: 100%;
-}
 .image{
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
 }
 .image>img{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -340,7 +364,7 @@ border-radius:8px;
 margin-bottom:20px;
 box-shadow:0 2px 6px rgba(0,0,0,0.08);
 }
-
+/* option */
 .option{
 padding:10px;
 margin-top:8px;

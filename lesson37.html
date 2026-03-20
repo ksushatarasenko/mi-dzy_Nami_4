@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleZumImage.css">
+    <link rel="stylesheet" href="./css/styleRu.css">
 
 </head>
 
@@ -26,6 +27,33 @@
     </header>
 
     <div class="container">
+        <div class="box">
+            <h3><a href="https://multipodreczniki.apps.gwo.pl/demos/37f00f9e-936c-4099-b277-17bbc0597c76?page=265"
+                    target="_blank"> ksizka 265 - 268</a></h3>
+            <button class="ru-btn modal-trigger" data-modal="ru_1"><img src="./icons/nauczyciel.png" alt=""
+                    class="icons"></button>
+
+            <div class="modal" data-modal="ru_1">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Когда в слове пишем заглавную, а когда — строчную букву?</h3>
+                    <h4>ЦЕЛИ, ВЫТЕКАЮЩИЕ ИЗ УЧЕБНОЙ ПРОГРАММЫ</h4>
+                    <h6>Языковое образование:</h6>
+                    <p><em>Пишет грамотно с точки зрения орфографии и применяет правила правописания.</em></p>
+
+                    <h6>ПЛАН РАБОТЫ НА УРОКЕ</h6>
+                    <ol>
+                        <li>Поиск на карте Польши слов, являющихся собственными именами.</li>
+                        <li>Изучение орфографических правил написания с заглавной и строчной буквы.</li>
+                        <li>Упражнения для закрепления изученного правила.</li>
+                    </ol>
+                    <h6>ПРИМЕЧАНИЯ К УРОКУ</h6>
+                    <p>Материал, касающийся написания с заглавной и строчной буквы, довольно обширный. Его стоит
+                        разделить на более мелкие части или предложить ученикам цикл занятий, посвящённых другой
+                        тематике, например: памятникам, путешествиям или польским легендам.</p>
+                </div>
+            </div>
+        </div>
         <!-- Карта Польши -->
         <div class="box">
 
@@ -539,57 +567,28 @@
         </div>
         <!-- rule -->
         <div class="rule">
+            <div class="two">
+                <div>
+                    <p class="rule-title">Nazwy miast, dzielnic i wsi</p>
+                    <p>Nazwy miast, dzielnic i wsi piszemy wielką literą.</p>
+                    <p><b>Przykłady:</b></p>
+                    <p><em>Warszawa, Wrocław, Gdańsk</em></p>
+                    <p><em>Названия городов и деревень пишутся с большой буквы.</em></p>
+                </div>
+                <div>
+                    <p class="rule-title">Nazwy mieszkańców</p>
+                    <p>Nazwy mieszkańców miast
+                        piszemy małą literą.</p>
+                    <p><b>Przykłady:</b></p>
+                    <p><em>warszawiak, krakowianin, gdańszczanin</em></p>
+                    <p><em>Названия жителей пишутся с маленькой буквы.</em></p>
+                </div>
+            </div>
 
-            <p class="rule-title">
-                Nazwy miast, dzielnic i wsi
-            </p>
-
-            <p>
-                Nazwy miast, dzielnic i wsi
-                piszemy wielką literą.
-            </p>
-
-            <p>
-                <b>Przykłady:</b>
-            </p>
-
-            <p>
-                Warszawa, Wrocław, Gdańsk
-            </p>
-
-            <p>
-                <em>
-                    Названия городов и деревень пишутся с большой буквы.
-                </em>
-            </p>
-
-        </div>
-
-        <div class="rule">
-
-            <p class="rule-title">
-                Nazwy mieszkańców
-            </p>
-
-            <p>
-                Nazwy mieszkańców miast
-                piszemy małą literą.
-            </p>
-
-            <p>
-                <b>Przykłady:</b>
-            </p>
-
-            <p>
-                warszawiak, krakowianin, gdańszczanin
-            </p>
-
-            <p>
-                <em>
-                    Названия жителей пишутся с маленькой буквы.
-                </em>
-            </p>
-
+            <div class="image">
+                <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/polska/dopImage/266_1.png"
+                    alt="266_1" class="zum">
+            </div>
         </div>
         <!-- ZADANIE 3 -->
         <div class="box">
@@ -651,7 +650,10 @@
                     Названия улиц и парков пишутся с большой буквы.
                 </em>
             </p>
-
+            <div class="image">
+                <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/polska/dopImage/266_2.png"
+                    alt="266_2" class="zum">
+            </div>
         </div>
         <!-- slownistwo -->
         <div class="box">
@@ -659,6 +661,10 @@
             <div class="title">Słownictwo do opisu drogi</div>
 
             <p><em>Слова, которые помогают описывать дорогу и маршрут.</em></p>
+            <div class="image">
+                <img src="https://raw.github.com/ksushatarasenko/polishSzkola_4klasa_assets/main/polska/dopImage/266_3.png"
+                    alt="266_3" class="zum">
+            </div>
 
             <div class="vocab-list">
 
@@ -894,7 +900,12 @@
             <button onclick="toggleAnswer('a10')">Pokaż odpowiedź</button>
 
             <div id="a10" class="answer">
-                <p>Moja wymarzona wycieczka jest podróżą do Krakowa. Bardzo chcę zobaczyć zamek Wawel i obejrzeć jego komnaty oraz pospacerować po dziedzińcu. Chcę również wyjść po schodach do góry, by dotknąć Dzwonu Zygmunta. Z Krakowem jest związanych wiele legend. Jedna z nich opowiada o Smoku, którego pomnik można zobaczyć w okolicach zamku na Wawelu. Można do niego przejść Smoczą Jamą, którą warto odwiedzić. Pragnę również, by spacerując po rynku, moc usłyszeć hejnał dobiegający z Wieży Mariackiej.</p>
+                <p>Moja wymarzona wycieczka jest podróżą do Krakowa. Bardzo chcę zobaczyć zamek Wawel i obejrzeć jego
+                    komnaty oraz pospacerować po dziedzińcu. Chcę również wyjść po schodach do góry, by dotknąć Dzwonu
+                    Zygmunta. Z Krakowem jest związanych wiele legend. Jedna z nich opowiada o Smoku, którego pomnik
+                    można zobaczyć w okolicach zamku na Wawelu. Można do niego przejść Smoczą Jamą, którą warto
+                    odwiedzić. Pragnę również, by spacerując po rynku, moc usłyszeć hejnał dobiegający z Wieży
+                    Mariackiej.</p>
             </div>
         </div>
 
@@ -909,6 +920,8 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/imageZum.js"></script>
+    <script src="./js/scriptRu.js"></script>
+
 
 </body>
 
