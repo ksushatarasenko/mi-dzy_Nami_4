@@ -105,7 +105,7 @@ function checkQuiz() {
   });
 }
 
-// Ułóż wydarzenia w kolejności
+// Ułóż wydarzenia w kolejności - (перетаскивание событий)
 const list = document.getElementById("events");
 
 if (list) {
@@ -132,7 +132,7 @@ if (list) {
     }
   });
 }
-//
+
 
 function getDragAfterElement(container, y) {
   const draggableElements = [
@@ -179,6 +179,8 @@ function checkOrder() {
     result.style.color = "red";
   }
 }
+
+// // end Ułóż wydarzenia w kolejności - (перетаскивание событий)
 
 // klik slowa
 document.addEventListener("DOMContentLoaded", function () {
