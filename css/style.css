@@ -156,6 +156,20 @@ ol>li{
     color: rgb(130, 2, 70);
     font-style: italic;
 }
+h1{
+    color: rgb(0, 128, 122);
+    font-size: 28px;
+    text-align: center;
+}
+h1 a{
+    color: rgb(0, 128, 122);
+    font-size: 28px;
+    text-decoration: none;
+}
+h1:hover{
+    color: rgb(4, 212, 118);
+    scale: calc(1.3);
+}
 h4{
     color: rgb(0, 128, 122);
     font-size: 24px;
@@ -182,10 +196,16 @@ margin-bottom:10px;
     font-family: 20px;
 }
 .blue{
-    color:#086ae3;
+    color:#086ae3!important;
     font-family: 20px;
 }
+.green{
+    color:#12ce08;
+}
 
+.str{
+    text-align: right;
+}
 .text{
     font-family: 19px;
     line-height: 1.4;
@@ -225,17 +245,23 @@ border-radius:12px;
 margin:3px 0;
 box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
-/* 
-.emotion h3{
-color:#1e40ff;
-font-size:24px;
-margin-bottom:15px;
-}
+.lesson {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            display: block;
+            color: #333;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
 
-.emotion h3 span{
-color:#333;
-font-weight:normal;
-} */
+        .lesson:hover {
+            background: #dff3ff;
+        }
 
 .emotion p{
 font-size:18px;

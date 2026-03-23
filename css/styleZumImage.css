@@ -15,12 +15,12 @@
 
 
 /* увеличенная картинка */
-.image-overlay {
+/* .image-overlay {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* ВАЖНО */
-}
+    align-items: flex-start;
+} */
 .image-overlay img {
     max-width: none;   
     max-height: none;
