@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Lekcja 1 – Głoska a litera</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        Lekcja 1 – Głoska a litera
+    </header>
+
+    <div class="container">
+        <!-- Co to jest głoska? -->
+        <div class="box">
+            <h2 style="color: rgba(203, 5, 203, 0.963);">Co to jest głoska?</h2>
+            <p>
+                Głoska to dźwięk, który słyszymy kiedy mówimy.
+            </p>
+            <p>
+                Na przykład kiedy mówimy słowo <b>kot</b>, słyszymy głoski:
+            </p>
+            <p>
+                k – o – t
+            </p>
+        </div>
+
+        <!-- Co to jest litera? -->
+        <div class="box">
+            <h2 style="color: rgba(203, 5, 203, 0.963);">Co to jest litera?</h2>
+            <p>
+                Litera to znak, który zapisujemy.
+            </p>
+            <p>
+                Na przykład słowo <b>kot</b> zapisujemy literami:
+            </p>
+            <p>
+                K O T
+            </p>
+
+            <button onclick="showAnswer()">Pokaż różnicę</button>
+
+            <p id="answer" style="display:none">
+                <b>Głoska</b> – to dźwięk który słyszymy. <br><br>
+                <b>Litera</b> – to znak który piszemy.
+            </p>
+
+        </div>
+        <!-- Zasada -->
+        <div class="rule">
+            <h3>Zasada</h3>
+            <p>
+                <b>Głoski</b> wypowiadamy i słyszymy,
+                a <b>litery</b> piszemy lub odczytujemy.
+            </p>
+            <p>
+                <b>Звуки</b> мы произносим и слышим,
+                а <b>буквы</b> мы пишем и читаем.
+            </p>
+
+        </div>
+
+        <!-- Litera -->
+        <div class="box">
+            <div class="word">
+                <b>Litera</b>
+                <p>
+                    буква — знак которым записывается звук
+                </p>
+            </div>
+
+            <div class="word">
+                <b>Głoska</b>
+                <p>
+                    звук речи который мы слышим
+                </p>
+            </div>
+
+        </div>
+
+        <div class="vocab">
+
+            <h3>Nowe słowa</h3>
+
+            <div class="word">
+                <b>Czarna wdowa</b> — ядовитый паук
+            </div>
+            <div class="word">
+                <b>Miedza</b> — межа, узкая полоска земли между полями
+            </div>
+            <div class="word">
+                <b>Purpura</b> — пурпурный цвет
+            </div>
+
+        </div>
+        <div class="vocab">
+            <b>Bohater</b>
+            <p>
+                персонаж, который участвует в событиях (реальных или вымышленных)
+            </p>
+        </div>
+        <!-- Emocje -->
+        <div class="box">
+            <h3>Emocje</h3>
+            <div class="emotions-grid">
+                <div class="word">
+                    <p class="p">radość — радость</p>
+                    <p><b>1.</b> Mam wielką radość, gdy spotykam przyjaciół. - <em>Мне очень радостно, когда я встречаю
+                            друзей.</em></p>
+                    <p><b>2.</b> Dziecko skakało z radości. - <em>Ребёнок прыгал от радости.</em></p>
+                </div>
+                <div class="word">
+                    <p class="p">nadzieja — надежда</p>
+                    <p><b>1.</b> Mam nadzieję, że jutro będzie słonecznie. - <em>Я надеюсь, что завтра будет
+                            солнечно.</em></p>
+                    <p><b>2.</b> Nie trać nadziei. - <em>Не теряй надежду.</em></p>
+                </div>
+                <div class="word">
+                    <p class="p">ulga — облегчение</p>
+                    <p><b>1.</b> Poczułem ulgę po zakończeniu sprawdzianu. - <em>Я почувствовал облегчение после
+                            контрольной.</em></p>
+                    <p><b>2.</b> Mama odetchnęła z ulgą. - <em>Мама вздохнула с облегчением.</em></p>
+                </div>
+                <div class="word">
+                    <p class="p">smutek — грусть</p>
+                    <p><b>1.</b> Czułem smutek, gdy pies zachorował. - <em>Мне было грустно, когда собака заболела.</em>
+                    </p>
+                    <p><b>2.</b> Na jego twarzy widać smutek. - <em>На его лице видно грусть.</em></p>
+                </div>
+                <div class="word">
+                    <p class="p">żal — сожаление</p>
+                    <p><b>1.</b> Było mi żal małego kotka. - <em>Мне было жаль маленького котёнка.</em></p>
+                    <p><b>2.</b> Mam żal do kolegi.
+                        - <em>Я обижен на друга.</em></p>
+                </div>
+                <div class="word">
+                    <p class="p">złość — злость</p>
+                    <p><b>1.</b> Poczułem złość, gdy ktoś zabrał moją książkę. - <em>Я почувствовал злость, когда кто-то
+                            взял мою книгу.</em></p>
+                    <p><b>2.</b> Nie pokazuj złości kolegom.
+                        - <em>Не показывай злость друзьям.</em></p>
+                </div>
+                <div class="word">
+                    <p class="p">ciekawość — любопытство</p>
+                    <p><b>1.</b> Ciekawość kazała mi zajrzeć do pudełka. - <em>Любопытство заставило меня заглянуть в
+                            коробку.</em></p>
+                    <p><b>2.</b> Dzieci mają dużą ciekawość świata. - <em>У детей большое любопытство к миру.</em></p>
+                </div>
+                <div class="word">
+                    <p class="p">obawa — тревога</p>
+                    <p><b>1.</b> Mam obawę przed burzą. - <em>Я боюсь грозы.</em></p>
+                    <p><b>2.</b> Rodzice mieli obawę o dziecko. - <em>Родители тревожились за ребёнка.</em></p>
+                </div>
+                <div class="word">
+                    <p class="p">podekscytowanie — возбуждение</p>
+                    <p><b>1.</b> Czułem podekscytowanie przed wycieczką. - <em>Я был взволнован перед поездкой.</em></p>
+                    <p><b>2.</b> Dzieci mówiły o wycieczce z podekscytowaniem. - <em>Дети с волнением говорили о
+                            поездке.</em></p>
+                </div>
+            </div>
+        </div>
+        <!-- Słowa z tekstu -->
+        <div class="box">
+            <h3>Słowa z tekstu</h3>
+            <div class="emotions-grid">
+                <div class="emotion">
+                    <p class="p">Igliwie — хвоя</p>
+                    <p><b>1.</b> Na ziemi leżało dużo igliwia. - <em>На земле лежало много хвои.</em></p>
+                    <p><b>2.</b> Las pachniał świeżym igliwiem. - <em>Лес пах свежей хвоей.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">stracić zupełnie orientację — полностью потерять ориентир</p>
+                    <p><b>1.</b> W lesie łatwo stracić orientację. - <em>В лесу легко потерять ориентир.</em></p>
+                    <p><b>2.</b> Podczas mgły straciliśmy zupełnie orientację. - <em>Во время тумана мы полностью
+                            потеряли ориентир.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">pędzić na złamanie karku — мчаться сломя голову</p>
+                    <p><b>1.</b> Chłopiec pędził na złamanie karku do domu. - <em>Мальчик мчался домой сломя
+                            голову.</em></p>
+                    <p><b>2.</b> Nie pędź na złamanie karku! - <em>Не мчись так быстро!</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">zamajaczyć — смутно показаться вдали</p>
+                    <p><b>1.</b> W oddali zamajaczył stary dom. - <em>Вдали показался старый дом.</em></p>
+                    <p><b>2.</b> W mgle zamajaczyły drzewa. - <em>В тумане показались деревья.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">rozłożyste — раскидистый</p>
+                    <p><b>1.</b> Na polu rosło rozłożyste drzewo. - <em>В поле росло раскидистое дерево.</em></p>
+                    <p><b>2.</b> Drzewo miało rozłożyste gałęzie. - <em>У дерева были раскидистые ветви.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">konary — большие ветви дерева</p>
+                    <p><b>1.</b> Na konarach siedziały ptaki. - <em>На ветвях сидели птицы.</em></p>
+                    <p><b>2.</b> Silny wiatr łamał konary drzew. - <em>Сильный ветер ломал ветви деревьев.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">korona — крона дерева</p>
+                    <p><b>1.</b> Ptaki ukryły się w koronie drzewa. - <em>Птицы спрятались в кроне дерева.</em></p>
+                    <p><b>2.</b> Korona drzewa dawała dużo cienia. - <em>Крона дерева давала много тени.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">balansować — балансировать</p>
+                    <p><b>1.</b> Chłopiec balansował na kłodzie. - <em>Мальчик балансировал на бревне.</em></p>
+                    <p><b>2.</b> Trudno balansować na wąskiej desce. - <em>Трудно балансировать на узкой доске.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">próchno — трухлявая древесина</p>
+                    <p><b>1.</b> Stare drzewo zamieniło się w próchno. - <em>Старое дерево превратилось в труху.</em>
+                    </p>
+                    <p><b>2.</b> W lesie leżało dużo próchna. - <em>В лесу лежало много трухлявой древесины.</em></p>
+                </div>
+
+                <div class="emotion">
+                    <p class="p">smagane — хлестаемые ветром</p>
+                    <p><b>1.</b> Drzewa były smagane silnym wiatrem. - <em>Деревья хлестал сильный ветер.</em></p>
+                    <p><b>2.</b> Trawa była smagana przez deszcz. - <em>Траву хлестал дождь.</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box quiz">
+
+            <h2>Mini gra</h2>
+
+            <p>Która z tych odpowiedzi to głoska?</p>
+
+            <button onclick="quiz1()">B</button>
+            <button onclick="quiz2()">a</button>
+            <button onclick="quiz3()">7</button>
+
+            <p id="quizResult1" class="result"></p>
+
+        </div>
+        <div class="box quiz">
+
+            <h3>Ćwiczenie</h3>
+
+            <p>Które słowo oznacza "хвоя"?</p>
+
+            <button onclick="checkAnswer('igliwie')">Igliwie</button>
+            <button onclick="checkAnswer('korona')">Korona</button>
+            <button onclick="checkAnswer('próchno')">Próchno</button>
+
+            <p id="quizResult2"></p>
+
+        </div>
+        <div class="phrases">
+
+            <h3>Przydatne zwroty</h3>
+
+            <div class="phrase">Czy mogłaby pani / czy mógłby pan – не могли бы вы</div>
+
+            <div class="phrase">Spróbuj – попробуй</div>
+
+            <div class="phrase">Chciałabym / chciałbym poprosić – я хотел(а) бы попросить</div>
+
+            <div class="phrase">Postaraj się, by – постарайся чтобы</div>
+
+            <div class="phrase">Proponuję, by – предлагаю чтобы</div>
+
+            <div class="phrase">Może zechciałabyś / zechciałbyś – может быть ты захочешь</div>
+
+            <div class="phrase">Weź – возьми</div>
+
+            <div class="phrase">Poproszę o – попрошу</div>
+
+            <div class="phrase">Czy mogłabyś / mógłbyś – не мог(ла) бы ты</div>
+
+            <div class="phrase">Sprawdź, czy – проверь</div>
+
+            <div class="phrase">Trzymaj – держи</div>
+
+            <div class="phrase">Podaj mi – подай мне</div>
+
+        </div>
+        <div class="phrases">
+
+            <h3>Zwroty do wypowiedzi</h3>
+
+            <div class="phrase">Pomyśl o – подумай о</div>
+
+            <div class="phrase">Pamiętaj o tym, że – помни что</div>
+
+            <div class="phrase">Zauważ, że – обрати внимание что</div>
+
+            <div class="phrase">Weź pod uwagę, że – учти что</div>
+
+            <div class="phrase">Każdy z nas przecież musi – каждый из нас ведь должен</div>
+
+            <div class="phrase">Nie myśl o tym, że – не думай о том что</div>
+
+        </div>
+
+
+        <a href="index.html" class="back">
+            ⬅ Powrót do lekcji
+        </a>
+
+    </div>
+
+</body>
+
+</html>
