@@ -367,6 +367,7 @@ border-radius:6px;
     margin: 0 auto;
     gap: 1px;
     justify-content: space-around;
+    margin-left: -15px;
 }
 .two>div{
     width: 100%;
@@ -767,4 +768,19 @@ transform:scale(1.3);
 }
 .page-image-wrapper img{
     width: 100%;
+}
+.wiersz{
+    width: 300px;
+    margin: 0 auto;
+}
+.left{
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 400px;
+}
+.right{
+    margin-left: 150px;
+    margin-top: 15px;
+    width: 300px;
+
 }
