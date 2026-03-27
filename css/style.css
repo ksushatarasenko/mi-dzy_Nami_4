@@ -457,14 +457,16 @@ cursor:pointer;
 width:100%;
 border-collapse:collapse;
 margin-top:15px;
+
 }
 
 .lesson-table th,
 .lesson-table td{
-border:1px solid #ddd;
+border:2px solid #d0cdcd;
 padding:10px;
 text-align:left;
 font-size: 18px;
+background-color: rgb(231, 239, 238);
 }
 
 /* Kto to powiedział? */
